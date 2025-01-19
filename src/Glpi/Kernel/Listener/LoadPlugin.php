@@ -36,7 +36,7 @@ declare(strict_types=1);
 
 namespace Glpi\Kernel\Listener;
 
-use Glpi\Event;
+use Glpi\Log\LegacyGlobalLogger;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Event\ExceptionEvent;
@@ -44,6 +44,14 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 final readonly class LoadPlugin implements EventSubscriberInterface
 {
+    private LegacyGlobalLogger $logger;
+
+    public function __construct(LegacyGlobalLogger $logger)
+    {
+        $this->logger = $logger;
+    }
+
+
     public static function getSubscribedEvents(): array
     {
         return [
@@ -80,18 +88,11 @@ final readonly class LoadPlugin implements EventSubscriberInterface
             Response::HTTP_INTERNAL_SERVER_ERROR
         ));
 
-        // log error @todo injectable ?
         $message = sprintf(
             __('Plugin %1$s has been suspended by system, it has fatal errors.'),
             $plugin_key
         );
-        Event::log(
-            '',
-            \Plugin::class,
-            3,
-            "setup",
-            $message
-        );
+        $this->logger->critical($message, ['exception' => $throwable]);
 
         // message de session - @todo utile ? @todo injectable ?
         \Session::addMessageAfterRedirect(
@@ -132,11 +133,7 @@ final readonly class LoadPlugin implements EventSubscriberInterface
             );
 
             if (!$creation) {
-                Event::log(
-                    '',
-                    \Plugin::class,
-                    3,
-                    __FILE__,
+                $this->logger->error(
                     "Failed to create plugin $plugin_key in database for suspension."
                 );
                 throw new \RuntimeException("Failed to create plugin '$plugin_key' in database for suspension.");
