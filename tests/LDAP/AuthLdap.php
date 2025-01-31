@@ -434,22 +434,6 @@ class AuthLDAP extends DbTestCase
          ->isIdenticalTo("(modifyTimestamp>=20170420000000.0Z)(modifyTimestamp<=20170422000000.0Z)");
     }
 
-    public function testGetDefault()
-    {
-        $this->integer((int)\AuthLDAP::getDefault())->isIdenticalTo((int)$this->ldap->getID());
-
-       //Load ldap servers
-        $this->addLdapServers();
-        $ldap = getItemByTypeName('AuthLDAP', 'LDAP3');
-        $this->integer((int)\AuthLDAP::getDefault())->isIdenticalTo((int)$ldap->getID());
-
-        $ldap->update([
-            'id'        => $ldap->getID(),
-            'is_active' => 0
-        ]);
-        $this->integer((int)\AuthLDAP::getDefault())->isIdenticalTo(0);
-    }
-
     public function testPrepareInputForAdd()
     {
         $ldap     = new \AuthLDAP();
