@@ -3249,6 +3249,7 @@ JS;
      * @return void|string
      *    void if option display=true
      *    string if option display=false (HTML code)
+     * @psalm-taint-specialize
      **/
     public static function showToolTip($content, $options = [])
     {
@@ -3293,7 +3294,7 @@ JS;
         if (empty($param['applyto'])) {
             if (!empty($param['link'])) {
                 $out .= "<a id='" . (!empty($param['linkid']) ? htmlescape($param['linkid']) : "tooltiplink$rand") . "'
-                        class='dropdown_tooltip {$param['link_class']}'";
+                        class='dropdown_tooltip ".htmlescape($param['link_class'])."'";
 
                 if (!empty($param['linktarget'])) {
                     $out .= " target='" . htmlescape($param['linktarget']) . "' ";
@@ -3326,6 +3327,7 @@ JS;
 
         $contentid = htmlescape($param['contentid']);
 
+        // content can't be escaped -> @psalm-taint-specialize
         $out .= "<div id='" . $contentid . "' class='tooltip-invisible'>$content</div>";
         if (!empty($param['popup'])) {
             $out .= Ajax::createIframeModalWindow(
@@ -4173,7 +4175,7 @@ JAVASCRIPT
         $link = "<a ";
 
         if (!empty($btoption)) {
-            $link .= ' ' . $btoption . ' ';
+            $link .= ' ' . htmlescape($btoption) . ' ';
         }
        // Do not force class if already defined
         if (!strstr($btoption, 'class=')) {
@@ -4183,6 +4185,7 @@ JAVASCRIPT
                 $link .= " class='pointer' ";
             }
         }
+        $action = strip_tags($action);
         $action  = " submitGetLink('$action', " . htmlescape(json_encode($fields)) . ");";
 
         if (is_array($confirm) || strlen($confirm)) {
@@ -4193,6 +4196,7 @@ JAVASCRIPT
 
         // Ensure $btlabel is properly escaped
         $btlabel = htmlescape($btlabel);
+        $btimage = htmlescape($btimage);
         $link .= '>';
         if (empty($btimage)) {
             $link .= $btlabel;
@@ -4245,6 +4249,7 @@ JAVASCRIPT
      *
      * @since 0.83.
      *
+     * @psalm-taint-specialize
      * @return string|true
      * @phpstan-return $display is true ? true : string
      **/
