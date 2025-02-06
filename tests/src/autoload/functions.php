@@ -773,11 +773,11 @@ function loadDataset()
 
 /**
  * Test helper, search an item from its type and name
- *
- * @param string  $type
+ * @template T
+ * @param class-string<T>  $type
  * @param string  $name
  * @param boolean $onlyid
- * @return CommonDBTM|false the item, or its id
+ * @return T|int|false Item of $type class, its id, false
  */
 function getItemByTypeName($type, $name, $onlyid = false)
 {
