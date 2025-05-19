@@ -32,7 +32,6 @@
  * ---------------------------------------------------------------------
  */
 
-use function Safe\date;
 
 class ValidationStep extends \CommonDropdown
 {

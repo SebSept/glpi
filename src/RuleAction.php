@@ -647,13 +647,14 @@ class RuleAction extends CommonDBChild
                             break;
 
                         case "percent":
-                            echo Html::input('value', [
-                                'value' => $param['value'],
-                                'type' => 'number',
-                                'min' => 0,
-                                'max' => 100,
-                                'style' => 'padding:9px',
-                                ] );
+                            Dropdown::showNumber(
+                                'value',
+                                [
+                                    'value' => $param['value'],
+                                    'min'   => 0,
+                                    'max'   => 100,
+                                ]
+                            );
                             $display = true;
                             break;
 

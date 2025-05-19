@@ -272,3 +272,26 @@ function is_validationstep_migration_done($itil_tables, \DBmysql $DB, Migration 
 {
     return !$DB->fieldExists($itil_tables[0], 'validation_percent', false);
 }
+
+/**
+ * Migrate the validation rules.
+ */
+function migrate_validation_rules(\DBmysql $DB, Migration $migration): void
+{
+    // Validation threshold now applies to a specific step
+    $migration->addPostQuery(
+        $DB->buildUpdate(
+            'glpi_ruleactions',
+            ['action_type' => 'validationsteps_threshold'],
+            ['action_type' => 'validation_percent']
+        )
+    );
+
+    // Drop `global_validation` assignment action, not supported anymore
+    $migration->addPostQuery(
+        $DB->buildDelete(
+            'glpi_ruleactions',
+            ['action_type' => 'global_validation']
+        )
+    );
+}

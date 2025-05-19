@@ -130,25 +130,43 @@ abstract class RuleCommonITILObject extends Rule
 TWIG, ['message' => __('Urgency or impact used in actions, think to add Priority: recompute action if needed.')]);
         }
 
-        // Validation step assignation (validation step or threshold) without validation creation
+        // Validation step assignation without any validation action,
+        // or validation action without assigning the corresponding step
         $action_keys = [];
         $actions_fields = array_column($this->actions, 'fields');
         foreach ($actions_fields as $field) {
             $action_keys[] = $field['field'];
         }
 
-        $fields_related_to_validation_but_not_triggering_validation = ['validationsteps_id', 'validationsteps_threshold'];
-        $fields_trigerring_validation = ['users_id_validate', 'responsible_id_validate', 'groups_id_validate', 'groups_id_validate_any', 'users_id_validate_requester_supervisor', 'users_id_validate_assign_supervisor'];
+        $fields_trigerring_validation = [
+            'users_id_validate',
+            'responsible_id_validate',
+            'groups_id_validate',
+            'groups_id_validate_any',
+            'users_id_validate_requester_supervisor',
+            'users_id_validate_assign_supervisor',
+            'validationsteps_threshold',
+        ];
         if (
-            array_intersect($fields_related_to_validation_but_not_triggering_validation, $action_keys)
-            && empty(array_intersect($action_keys, $fields_trigerring_validation))
+            in_array('validationsteps_id', $action_keys, true)
+            && count(array_intersect($action_keys, $fields_trigerring_validation)) === 0
         ) {
             // language=Twig
             echo TemplateRenderer::getInstance()->renderFromStringTemplate(<<<TWIG
                 <div class="alert alert-warning">
                     {{ message }}
                 </div>
-TWIG, ['message' => __('Actions related to validation are set, but no validation creation action is set.')]);
+TWIG, ['message' => __('An action defines the validation step, but there is no action related to this validation step. Did you forgot to add an action?')]);
+        } elseif (
+            count(array_intersect($action_keys, $fields_trigerring_validation)) > 0
+            && in_array('validationsteps_id', $action_keys, true) === false
+        ) {
+            // language=Twig
+            echo TemplateRenderer::getInstance()->renderFromStringTemplate(<<<TWIG
+                <div class="alert alert-warning">
+                    {{ message }}
+                </div>
+TWIG, ['message' => __('An action related to a validation exists, but there is no action assigning the corresponding validation step. Therefore, the default one will be used.')]);
         }
 
         return;
@@ -995,7 +1013,7 @@ TWIG, ['message' => __('Actions related to validation are set, but no validation
             $actions['validationsteps_id']['force_actions']             = ['add_validation'];
 
             // choose approval (validation) threshold
-            $actions['validationsteps_threshold']['name']               = __('Set approval threshold');
+            $actions['validationsteps_threshold']['name']               = __('Set approval threshold (in percentage)');
             $actions['validationsteps_threshold']['type']               = 'percent';
             $actions['validationsteps_threshold']['force_actions']      = ['add_validation'];
         }
