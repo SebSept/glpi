@@ -627,7 +627,6 @@ $RELATION = [
         '_glpi_itemvirtualmachines'        => 'entities_id',
         'glpi_itilcategories'              => 'entities_id',
         'glpi_itilfollowuptemplates'       => 'entities_id',
-        '_glpi_itils_validationsteps'      => 'entities_id',
         'glpi_itilvalidationtemplates'     => 'entities_id',
         'glpi_knowbaseitemcategories'      => 'entities_id',
         'glpi_knowbaseitems'               => 'entities_id',
