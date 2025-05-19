@@ -2728,12 +2728,6 @@ abstract class CommonITILObject extends CommonDBTM
             $this->fields['close_delay_stat'] = $this->computeCloseDelayStat();
         }
 
-        // Update of the global validation status if the validation percentage has changed
-        if (in_array("validation_percent", $this->updates)) {
-            $this->updates[] = 'global_validation';
-            $this->fields['global_validation'] = $this->getValidationClassInstance()->computeValidationStatus($this);
-        }
-
         //Look for reopening
         $statuses = array_merge(
             $this->getSolvedStatusArray(),
@@ -8882,6 +8876,7 @@ abstract class CommonITILObject extends CommonDBTM
                 $input["_add_validation"] = [$input["_add_validation"]];
             }
 
+            // user/groups assignements
             foreach ($input["_add_validation"] as $key => $value) {
                 switch ($value) {
                     case 'requester_supervisor':
@@ -9059,6 +9054,15 @@ abstract class CommonITILObject extends CommonDBTM
                         ) {
                             continue;
                         }
+                        // add validation step
+                        if (isset($input['_validationsteps_id'])) {
+                            $values['_validationsteps_id'] = $input['_validationsteps_id'];
+                        }
+                        // change validation step threshold
+                        if (isset($input['_validationsteps_threshold'])) {
+                            $values['_validationsteps_threshold'] = $input['_validationsteps_threshold'];
+                        }
+
                         $values['itemtype_target'] = $validation_to_send['itemtype_target'];
                         $values['items_id_target'] = $validation_to_send['items_id_target'];
                         if ($validation->add($values)) {
@@ -10178,7 +10182,7 @@ abstract class CommonITILObject extends CommonDBTM
             $column_field = 'status';
         }
         $columns = [];
-        if ($column_field === null || $column_field === 'status') {
+        if ($column_field === 'status') {
             $all_statuses = static::getAllStatusArray();
             foreach ($all_statuses as $status_id => $status) {
                 $columns['status'][$status_id] = [
@@ -10420,11 +10424,40 @@ abstract class CommonITILObject extends CommonDBTM
      */
     public static function getValidationClassInstance(): ?CommonITILValidation
     {
+        $validation_class_name = self::getValidationClassName();
+
+        return $validation_class_name ? new $validation_class_name() : null;
+    }
+
+    public static function getValidationClassName(): ?string
+    {
         $validation_class = static::class . 'Validation';
         if (class_exists($validation_class)) {
-            return new $validation_class();
+            return $validation_class;
         }
+
         return null;
+    }
+
+
+    /**
+     * @return class-string<\ITIL_ValidationStep>|null
+     */
+    public static function getValidationStepClassName(): ?string
+    {
+        $validation_class = static::class . 'ValidationStep';
+        if (class_exists($validation_class)) {
+            return $validation_class;
+        }
+
+        return null;
+    }
+
+    public static function getValidationStepInstance(): ?ITIL_ValidationStep
+    {
+        $class = self::getValidationStepClassName();
+
+        return $class ? new $class() : null;
     }
 
     /**
