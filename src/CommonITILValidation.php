@@ -333,10 +333,6 @@ abstract class CommonITILValidation extends CommonDBChild
         /** @var array $CFG_GLPI */
         global $CFG_GLPI;
 
-        if (isset($this->input['_validationsteps_threshold'])) {
-            $this->updateITILValidationStepThreshold((int) $this->input['_validationsteps_threshold']);
-        }
-
         $itilobject = $this->getItem();
         if (!($itilobject instanceof CommonITILObject)) {
             throw new \RuntimeException();
@@ -476,10 +472,6 @@ abstract class CommonITILValidation extends CommonDBChild
     {
         /** @var array $CFG_GLPI */
         global $CFG_GLPI;
-
-        if (isset($this->input['_validationsteps_threshold'])) {
-            $this->updateITILValidationStepThreshold((int) $this->input['_validationsteps_threshold']);
-        }
 
         $this->recomputeItilStatus();
 
@@ -2048,22 +2040,6 @@ HTML;
         ]);
         if (!$update) {
             throw new \RuntimeException('Failed to update Itil global approval status.');
-        }
-    }
-
-    /**
-     * Update minimal required validation percent of ITILValidationStep
-     */
-    private function updateITILValidationStepThreshold(int $threshold): void
-    {
-        $itil_validationstep = static::getItilObjectItemType()::getValidationStepInstance();
-        if (!$itil_validationstep->getFromDB($this->fields['itils_validationsteps_id'])) {
-            throw new \RuntimeException('Invalid ITIL validation step. ' . $this->fields['itils_validationsteps_id']);
-        };
-        if ((int) $itil_validationstep->fields['minimal_required_validation_percent'] != $threshold) {
-            if (!$itil_validationstep->update(['id' => $this->fields['itils_validationsteps_id'], 'minimal_required_validation_percent' => $threshold])) {
-                Session::addMessageAfterRedirect('Failed to update approval step threshold.');
-            };
         }
     }
 }
