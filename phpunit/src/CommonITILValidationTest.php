@@ -1255,6 +1255,7 @@ abstract class CommonITILValidationTest extends DbTestCase
             'items_id_target'   => $uid1,
         ]);
         $this->updateITIL_ValidationStepOfItil($validation_1, 100); // 100% required is default, added to be explicit
+        $this->assertValidationStatusEquals(CommonITILValidation::WAITING, $this->getValidationClassname()::computeValidationStatus($itil));
 
         $this->updateItem($this->getValidationClassname(), $validation_1->getID(), [
             'status'  => CommonITILValidation::ACCEPTED,
