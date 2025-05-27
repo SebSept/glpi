@@ -209,34 +209,34 @@ class ValidationStepTest extends \DbTestCase
             // multiple validations with different status
             [$itil, $itil_validationstep] = $this->createITILSValidationStepWithValidations($vs, [CommonITILValidation::WAITING, CommonITILValidation::REFUSED], itil_classname: $itil_class);
             $achievements = $itil_validationstep->getAchievements();
-            $this->assertEquals(50, $achievements[CommonITILValidation::WAITING]);
-            $this->assertEquals(50, $achievements[CommonITILValidation::REFUSED]);
+            $this->assertEquals(1 / 2 * 100, $achievements[CommonITILValidation::WAITING]);
+            $this->assertEquals(1 / 2 * 100, $achievements[CommonITILValidation::REFUSED]);
             $this->assertEquals(100, array_sum($achievements));
 
             [$itil, $itil_validationstep] = $this->createITILSValidationStepWithValidations($vs, [CommonITILValidation::WAITING, CommonITILValidation::REFUSED, CommonITILValidation::ACCEPTED], itil_classname: $itil_class);
             $achievements = $itil_validationstep->getAchievements();
-            $this->assertEquals(33, $achievements[CommonITILValidation::REFUSED]);
-            $this->assertEquals(34, $achievements[CommonITILValidation::ACCEPTED]);
-            $this->assertEquals(33, $achievements[CommonITILValidation::WAITING]);
+            $this->assertEquals(1 / 3 * 100, $achievements[CommonITILValidation::REFUSED]);
+            $this->assertEquals(1 / 3 * 100, $achievements[CommonITILValidation::ACCEPTED]);
+            $this->assertEquals(1 / 3 * 100, $achievements[CommonITILValidation::WAITING]);
 
             [$itil, $itil_validationstep] = $this->createITILSValidationStepWithValidations($vs, [CommonITILValidation::REFUSED, CommonITILValidation::REFUSED, CommonITILValidation::ACCEPTED], itil_classname: $itil_class);
             $achievements = $itil_validationstep->getAchievements();
-            $this->assertEquals(67, $achievements[CommonITILValidation::REFUSED]);
-            $this->assertEquals(33, $achievements[CommonITILValidation::ACCEPTED]);
+            $this->assertEquals(2 / 3 * 100, $achievements[CommonITILValidation::REFUSED]);
+            $this->assertEquals(1 / 3 * 100, $achievements[CommonITILValidation::ACCEPTED]);
             $this->assertEquals(0, $achievements[CommonITILValidation::WAITING]);
 
             // 4 validations with different status
             [$itil, $itil_validationstep] = $this->createITILSValidationStepWithValidations($vs, [CommonITILValidation::WAITING, CommonITILValidation::WAITING, CommonITILValidation::REFUSED, CommonITILValidation::ACCEPTED], itil_classname: $itil_class);
             $achievements = $itil_validationstep->getAchievements();
-            $this->assertEquals(50, $achievements[CommonITILValidation::WAITING]);
-            $this->assertEquals(25, $achievements[CommonITILValidation::REFUSED]);
-            $this->assertEquals(25, $achievements[CommonITILValidation::ACCEPTED]);
+            $this->assertEquals(2 / 4 * 100, $achievements[CommonITILValidation::WAITING]);
+            $this->assertEquals(1 / 4 * 100, $achievements[CommonITILValidation::REFUSED]);
+            $this->assertEquals(1 / 4 * 100, $achievements[CommonITILValidation::ACCEPTED]);
 
             // 5 validations with different status
             [$itil, $itil_validationstep] = $this->createITILSValidationStepWithValidations($vs, [CommonITILValidation::REFUSED, CommonITILValidation::REFUSED, CommonITILValidation::REFUSED, CommonITILValidation::ACCEPTED, CommonITILValidation::ACCEPTED], itil_classname: $itil_class);
             $achievements = $itil_validationstep->getAchievements();
-            $this->assertEquals(60, $achievements[CommonITILValidation::REFUSED]);
-            $this->assertEquals(40, $achievements[CommonITILValidation::ACCEPTED]);
+            $this->assertEquals(3 / 5 * 100, $achievements[CommonITILValidation::REFUSED]);
+            $this->assertEquals(2 / 5 * 100, $achievements[CommonITILValidation::ACCEPTED]);
             $this->assertEquals(100, array_sum($achievements));
         }
     }

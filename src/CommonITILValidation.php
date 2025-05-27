@@ -1042,9 +1042,9 @@ abstract class CommonITILValidation extends CommonDBChild
                                     aria-valuenow="{{ achieved }}"
                                     aria-valuemin="0"
                                     aria-valuemax="100"
-                                    aria-label="{{ achieved }}%"
+                                    aria-label="{{ achieved|formatted_number }}%"
                             >
-                                <span class="visually-hidden">{{ achieved }}%</span>
+                                <span class="visually-hidden">{{ achieved|formatted_number }}%</span>
                             </div>
                         </div>
                     {% endmacro %}
@@ -1067,7 +1067,7 @@ abstract class CommonITILValidation extends CommonDBChild
                         </div>
                         <div class="flex-grow-1">
                             <div class="progress-stacked position-relative" data-bs-toggle="tooltip"
-                                 title="{{ progress_label|format(accepted_percent, step_threshold) }}">
+                                 title="{{ progress_label|format(accepted_percent|formatted_number, step_threshold|formatted_number) }}">
                                 {{ _self.stacked_progressbar(accepted_percent, 'bg-green') }}
                                 {{ _self.stacked_progressbar(waiting_percent, 'bg-yellow', true) }}
                                 {{ _self.stacked_progressbar(refused_percent, 'bg-red') }}

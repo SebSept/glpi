@@ -170,7 +170,7 @@ abstract class ITIL_ValidationStep extends CommonDBChild
      * In case of non integer percentages, values will be rounded down (floor) and one of the status will get a have a higher percentage to reach 100%.
      * The affected status is the one with a non-zero value, the highest decimal part and comming first in the list of statuses (accepted at the moment).
      *
-     * @return array{2: int, 3: int, 4: int} array keys are the status constants
+     * @return array{2: float, 3: float, 4: float} array keys are the status constants
      */
     public function getAchievements(): array
     {
@@ -190,42 +190,11 @@ abstract class ITIL_ValidationStep extends CommonDBChild
 
         $count_by_status = fn($status) => count(array_filter($validations, fn($v) => $v["status"] === $status));
 
-        $exact_percentages = [
+        $result = [
             CommonITILValidation::ACCEPTED => $count_by_status(CommonITILValidation::ACCEPTED) / $validations_count * 100,
             CommonITILValidation::REFUSED => $count_by_status(CommonITILValidation::REFUSED) / $validations_count * 100,
             CommonITILValidation::WAITING => $count_by_status(CommonITILValidation::WAITING) / $validations_count * 100,
         ];
-
-        // result with rounded percentages
-        $result = [
-            CommonITILValidation::ACCEPTED => (int) $exact_percentages[CommonITILValidation::ACCEPTED],
-            CommonITILValidation::REFUSED => (int) $exact_percentages[CommonITILValidation::REFUSED],
-            CommonITILValidation::WAITING => (int) $exact_percentages[CommonITILValidation::WAITING],
-        ];
-
-        // because of rounding, the sum of the percentages may not be 100
-        // -> adjust the result to have a sum of 100 by adding the difference to the status with the highest decimal part
-        $sum = array_sum($result);
-        $difference = 100 - $sum;
-
-        if ($difference > 0) {
-            // compute difference for each status
-            $decimal_parts = [];
-            foreach ($exact_percentages as $status => $value) {
-                $decimal_parts[$status] = $value - floor($value);
-            }
-
-            // sort by decimal part in descending order
-            arsort($decimal_parts);
-
-            // add the difference to the status with the highest decimal part (avoiding statuses with 0%)
-            foreach ($decimal_parts as $status => $decimal_part) {
-                if ($exact_percentages[$status] > 0) {
-                    $result[$status] += $difference;
-                    break;
-                }
-            }
-        }
 
         return $result;
     }
