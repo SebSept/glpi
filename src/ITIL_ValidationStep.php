@@ -32,6 +32,8 @@
  * ---------------------------------------------------------------------
  */
 
+use Glpi\Application\View\TemplateRenderer;
+
 abstract class ITIL_ValidationStep extends CommonDBChild
 {
     public $dohistory              = false;
@@ -294,8 +296,16 @@ abstract class ITIL_ValidationStep extends CommonDBChild
 
     public function showForm($ID, array $options = [])
     {
-        $_GET['_in_modal'] = 0; // hack to get the <form> tag
+        $this->initForm($ID, $options);
 
-        return parent::showForm($ID, $options);
+        TemplateRenderer::getInstance()->display(
+            'components/itilobject/validationstep.html.twig',
+            [
+                'item'   => $this,
+                'params' => $options,
+                'no_header' => true,
+            ]
+        );
+        return true;
     }
 }
