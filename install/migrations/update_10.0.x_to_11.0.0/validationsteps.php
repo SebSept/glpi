@@ -260,6 +260,13 @@ function remove_validation_percent_on_itils(Migration $migration, array $itil_ta
 {
     foreach ($itil_tables as $table) {
         $migration->dropField($table, 'validation_percent');
+
+        $itil_class = match ($table) {
+            'glpi_tickets' => 'Ticket',
+            'glpi_changes' => 'Change',
+            default => throw new \RuntimeException('Unexpected ITIL table: ' . $table),
+        };
+        $migration->removeSearchOption($itil_class, 51); // 51 = validation_percent
     }
 }
 
