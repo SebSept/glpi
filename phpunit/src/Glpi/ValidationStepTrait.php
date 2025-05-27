@@ -95,8 +95,8 @@ trait ValidationStepTrait
                 [
                     $itil::getForeignKeyField() => $itil->getID(),
                     'itemtype_target' => 'User',
-                    'items_id_target' => getItemByTypeName(User::class, TU_USER)->getID(),
-                    '_validationsteps_id' => $validation_step->getID(),
+                    'items_id_target' => getItemByTypeName(User::class, TU_USER, true),
+                    'itils_validationsteps_id' => $ivs->getID(),
                     'status' => CommonITILValidation::WAITING,
                     'comment_validation' => 'validation comment',
                 ],
@@ -113,10 +113,6 @@ trait ValidationStepTrait
                 );
             }
         }
-
-        // rely on the last created validation, not a problem,
-        // the itils_validation_step is the same for all validations because we use a single validation step
-        assert(true === $ivs->getFromDB($validation->fields['itils_validationsteps_id']));
 
         // check created itil validation step has the exepected status
         // expected status is explicitely given in argument
