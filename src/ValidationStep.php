@@ -50,20 +50,11 @@ class ValidationStep extends \CommonDropdown
      */
     public function pre_deleteItem()
     {
-        if (count($this->find([])) == 1) {
+        if ($this->fields['is_default']) {
             return false;
         }
 
         return parent::pre_deleteItem();
-    }
-
-    public function post_purgeItem()
-    {
-        if ($this->isDefault()) {
-            $this->setAnotherAsDefault();
-        }
-
-        parent::post_purgeItem();
     }
 
     public function post_addItem()
@@ -79,10 +70,6 @@ class ValidationStep extends \CommonDropdown
     {
         if ($this->isDefault()) {
             $this->removeDefaultFromOthers();
-        }
-
-        if (!$this->isDefault() && $this->wasDefault()) {
-            $this->setAnotherAsDefault();
         }
 
         parent::post_updateItem($history);
@@ -133,6 +120,11 @@ class ValidationStep extends \CommonDropdown
             $is_input_valid = false;
         }
 
+        if ($this->isDefault() && !isset($input['_from_post_update'])) {
+            // Prevent having no default step
+            unset($input['is_default']);
+        }
+
         if (!$is_input_valid) {
             return false;
         }
@@ -179,30 +171,13 @@ class ValidationStep extends \CommonDropdown
             $vs->update([
                 'id' => $to_update['id'],
                 'is_default' => 0,
+                '_from_post_update' => true, // prevent `is_default` protection on the `prepareInputForUpdate()` method
             ]);
         }
-    }
-
-    private function setAnotherAsDefault(): void
-    {
-        $all_except_this = $this->find([['NOT' => ['id' => $this->getID()]]]);
-        if (empty($all_except_this)) {
-            throw new LogicException('no other approval to set as default but there should always remain a approval step - this should not happen, review the code');
-        }
-        $first = array_shift($all_except_this);
-        (new self())->update([
-            'id' => $first['id'],
-            'is_default' => 1,
-        ]);
     }
 
     private function isDefault(): bool
     {
         return $this->fields['is_default'] == 1;
-    }
-
-    private function wasDefault(): bool
-    {
-        return isset($this->oldvalues['is_default']) && $this->oldvalues['is_default'] == 1;
     }
 }

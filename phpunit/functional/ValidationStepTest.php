@@ -50,7 +50,7 @@ class ValidationStepTest extends \DbTestCase
         $this->assertEquals(1, $this->getInitialDefault()->fields['is_default'], 'A default validation step should be created at installation');
     }
 
-    public function testTheLastValidationCannotBeDeletedIfItsTheOnlyOne()
+    public function testTheDefaultValidationCannotBeDeleted()
     {
         assert(1 === countElementsInTable(\ValidationStep::getTable()), 'Test expects only one validation step at start');
 
@@ -58,12 +58,15 @@ class ValidationStepTest extends \DbTestCase
         $this->assertFalse($default->delete(['id' => $default->getID()]), 'The last remaining validation step must not be deleted');
     }
 
-    public function testAValidationStepCanBeDeletedIfItsNotTheLastOne()
+    public function testDefaultAttributeCannotBeRemoved()
     {
-        $this->createItem(\ValidationStep::class, $this->getValidValidationStepData());
+        assert(1 === countElementsInTable(\ValidationStep::getTable()), 'Test expects only one validation step at start');
 
         $default = $this->getInitialDefault();
-        $this->assertTrue($default->delete(['id' => $default->getID()]), 'The (initial) validation can be deleted, if it is not the last remaining one.');
+        $this->assertTrue($default->update(['id' => $default->getID(), 'is_default' => 0, 'name' => 'new name']));
+
+        $this->assertEquals(1, $default->fields['is_default']);
+        $this->assertEquals('new name', $default->fields['name']);
     }
 
     public function testDefaultAttributeIsRemovedWhenSetToAnotherValidationStep()
@@ -74,21 +77,6 @@ class ValidationStepTest extends \DbTestCase
 
         // assert
         $this->assertEquals(0, $this->getInitialDefault()->fields['is_default'], 'Previous default validation step should not be the default anymore.');
-    }
-
-    public function testDefaultAttributeIsSetToAnotherValidationStepWhenTheDefaultIsDeleted()
-    {
-        // arrange - create a non default validation step
-        $new = $this->createItem(\ValidationStep::class, $this->getValidValidationStepData());
-        $new_name = $new->fields['name'];
-
-        // act - delete the default validation step
-        $default = $this->getInitialDefault();
-        assert(true === $default->delete(['id' => $default->getID()]), 'Test expect that the (initial) validation step can be deleted.');
-
-        // assert - the previous non default validation step is the new default
-        $new_default = getItemByTypeName(ValidationStep::class, $new_name);
-        $this->assertEquals(1, $new_default->fields['is_default'], 'The previous non default validation step should be the new default.');
     }
 
     public function testNameAttributeIsMandatory()
