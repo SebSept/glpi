@@ -91,19 +91,20 @@
          <script type="text/javascript">
             // --- show/hide validation step field depending on validation type seleted
             $(
-                    () => {
-                       const validationstep_wrapper = $('#dropdown__validationsteps_id{{ rand }}').closest('.form-field');
-                       validationstep_wrapper.hide();
-                    }
+                () => {
+                    const validationstep_wrapper = $('#dropdown__validationsteps_id{{ rand }}').closest('.form-field');
+                    validationstep_wrapper.hide();
+                }
             );
 
             $("#dropdown__validation_targets_0__validatortype_{{ rand }}").on(
-                    'change',
-                    function() {
-                       const validationstep_wrapper = $('#dropdown__validationsteps_id{{ rand }}').closest('.form-field');
-                       const validation_activated = $(this).val() !== '0';
-                       validationstep_wrapper.toggle(validation_activated);
-                    });
+                'change',
+                function() {
+                   const validationstep_wrapper = $('#dropdown__validationsteps_id{{ rand }}').closest('.form-field');
+                   const validation_activated = $(this).val() !== '0';
+                   validationstep_wrapper.toggle(validation_activated);
+                }
+            );
          </script>
 
          <input type="hidden" name="_add_validation" value="{{ params['_add_validation'] }}" />
