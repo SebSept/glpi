@@ -845,8 +845,10 @@ abstract class CommonITILValidationTest extends DbTestCase
         // --- Arrange
 
         /** Create a group with two users (existing one () and new ($user_approval) */
-        $group_1 = $this->createItem('Group', [            'name'   => 'Test group'        ]);
-        $group_1_id = (int) $group_1->getID();
+        $group_1 = $this->createItem('Group', [
+            'name'   => 'Test group',
+        ]);
+        $group_1_id = $group_1->getID();
 
         $user_approval = $this->createItem(User::class, [
             'name'      => 'approval',
@@ -1026,12 +1028,6 @@ abstract class CommonITILValidationTest extends DbTestCase
         // Test : document upload and status change
 
         // update itil 2 validation step to require 100%
-        $this->updateItem(
-            $this->getITILValidationStepClassname(),
-            $validation_approval->fields['itils_validationsteps_id'],
-            ['minimal_required_validation_percent' => 100]
-        );
-
         $base64Image = base64_encode(file_get_contents(FIXTURE_DIR . '/uploads/foo.png'));
         $filename_img = '5e5e92ffd9bd91.11111111image_paste22222222.png';
         $filename_txt = '5e5e92ffd9bd91.11111111' . 'foo.txt';
@@ -1073,11 +1069,9 @@ abstract class CommonITILValidationTest extends DbTestCase
 
         $this->assertTrue($itil_1->getFromDB($itil_1->getID()));
 
-        // there is now one refused validation and a waiting one, validation_step requirement is 0%, so itil global_validation is REFUSED
-        $this->assertValidationStatusEquals(CommonITILValidation::REFUSED, (int) $itil_1->fields['global_validation']);
+        // there is now one refused validation and a validated one, validation_step requirement is 0%, so itil global_validation is ACCEPTED
+        $this->assertValidationStatusEquals(CommonITILValidation::ACCEPTED, (int) $itil_1->fields['global_validation']);
 
-        // require 100% for global status to be changed
-        assert(100 === $this->getInitialDefaultValidationStep()->fields['minimal_required_validation_percent']);
         /** Create an itil, approval requested */
         $itil = new ($this->getITILClassname());
         $itil_id_2 = $itil->add($itil_input = [
@@ -1110,6 +1104,13 @@ abstract class CommonITILValidationTest extends DbTestCase
             ])
         );
 
+        // require 100% for global status to be changed
+        $this->updateItem(
+            $this->getITILValidationStepClassname(),
+            $validation_step->getID(),
+            ['minimal_required_validation_percent' => 100]
+        );
+
         $validation = new ($this->getValidationClassname());
         $this->assertTrue(
             $validation->getFromDBByCrit([
@@ -1117,20 +1118,6 @@ abstract class CommonITILValidationTest extends DbTestCase
                 'itemtype_target' => 'User',
                 'items_id_target' => $user_glpi->getID(),
             ])
-        );
-
-        // update itil validation step to require 50%, so next assertion returns WAITING, and the seconde return ACCEPTED
-        // find itil itil_validationstep -> update it
-        $validation = new ($this->getValidationClassname());
-        $validation->getFromDBByCrit([
-            'itils_validationsteps_id' => $validation_step->getID(),
-            'itemtype_target' => 'User',
-            'items_id_target' => $user_glpi->getID(),
-        ]);
-        $this->updateItem(
-            $this->getITILValidationStepClassname(),
-            $validation->fields['itils_validationsteps_id'],
-            ['minimal_required_validation_percent' => 50]
         );
 
         $this->assertTrue(
@@ -1142,7 +1129,7 @@ abstract class CommonITILValidationTest extends DbTestCase
 
         // reload itil because global_validation is updated at Validation update
         $this->assertTrue($itil->getFromDB($itil_id_2));
-        $this->assertValidationStatusEquals(CommonITILValidation::ACCEPTED, (int) $itil->fields['global_validation']);
+        $this->assertValidationStatusEquals(CommonITILValidation::WAITING, (int) $itil->fields['global_validation']);
 
         // accept second one, both are accepted -> global_validation status should be ACCEPTED
         $this->login('approval', 'approval');
