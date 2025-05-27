@@ -276,7 +276,7 @@
                         'full_width': true,
                         'enable_richtext': true,
                         'enable_fileupload': false,
-                        'mention_options': mention_options,
+                        'mention_options': mention_options|default({}),
                         'entities_id': item.fields['entities_id'],
                         'rand': rand,
                         'disabled': item.fields['status'] != constant('CommonITILValidation::WAITING'),
