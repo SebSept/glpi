@@ -10215,7 +10215,7 @@ abstract class CommonITILObject extends CommonDBTM
             $column_field = 'status';
         }
         $columns = [];
-        if ($column_field === 'status') {
+        if ($column_field === null || $column_field === 'status') {
             $all_statuses = static::getAllStatusArray();
             foreach ($all_statuses as $status_id => $status) {
                 $columns['status'][$status_id] = [
