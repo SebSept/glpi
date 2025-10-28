@@ -35,6 +35,11 @@
 
 use Glpi\DBAL\QueryFunction;
 
+/**
+ * @template T of CommonITILObject
+ * @extends NotificationTarget<T>
+ * @phpstan-import-type TimelinePosition from CommonITILObject
+ */
 abstract class NotificationTargetCommonITILObject extends NotificationTarget
 {
     /** @var array */
@@ -483,7 +488,7 @@ abstract class NotificationTargetCommonITILObject extends NotificationTarget
             ],
             ] + $this->getDistinctUserCriteria() + $this->getProfileJoinCriteria();
             $criteria['FROM'] = $validationtable;
-            $criteria['WHERE']["$validationtable.id"] = $options['validation_id'];
+            $criteria['WHERE']["$validationtable.id"] = (int) $options['validation_id'];
 
             $iterator = $DB->request($criteria);
             foreach ($iterator as $data) {
@@ -516,7 +521,7 @@ abstract class NotificationTargetCommonITILObject extends NotificationTarget
             ],
             ] + $this->getDistinctUserCriteria() + $this->getProfileJoinCriteria();
             $criteria['FROM'] = $validationtable;
-            $criteria['WHERE']["$validationtable.id"] = $options['validation_id'];
+            $criteria['WHERE']["$validationtable.id"] = (int) $options['validation_id'];
 
             $iterator = $DB->request($criteria);
             foreach ($iterator as $data) {
@@ -1215,8 +1220,8 @@ abstract class NotificationTargetCommonITILObject extends NotificationTarget
     /**
      * Get data from an item
      *
-     * @param CommonITILObject  $item    Object instance
-     * @param array             $options Options
+     * @param T     $item    Object instance
+     * @param array $options Options
      * @param boolean           $simple  (false by default)
      *
      * @return array

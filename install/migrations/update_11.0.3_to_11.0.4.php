@@ -8,7 +8,6 @@
  * http://glpi-project.org
  *
  * @copyright 2015-2025 Teclib' and contributors.
- * @copyright 2003-2014 by the INDEPNET Development Team.
  * @licence   https://www.gnu.org/licenses/gpl-3.0.html
  *
  * ---------------------------------------------------------------------
@@ -33,26 +32,41 @@
  * ---------------------------------------------------------------------
  */
 
+use function Safe\preg_match;
+use function Safe\scandir;
+
 /**
- * Group_Ticket Class
+ * Update from 11.0.3 to 11.0.4
  *
- * @since 0.85
- *
- * Relation between Groups and Tickets
+ * @return bool for success (will die for most error)
  **/
-class Group_Ticket extends CommonITILActor
+function update1103to1104()
 {
-    // From CommonDBRelation
-    public static $itemtype_1 = 'Ticket';
-    public static $items_id_1 = 'tickets_id';
-    public static $itemtype_2 = 'Group';
-    public static $items_id_2 = 'groups_id';
+    /**
+     * @var DBmysql $DB
+     * @var Migration $migration
+     */
+    global $DB, $migration;
 
+    $updateresult       = true;
+    $ADDTODISPLAYPREF   = [];
+    $DELFROMDISPLAYPREF = [];
+    $update_dir = __DIR__ . '/update_11.0.3_to_11.0.4/';
 
-    public function post_purgeItem()
-    {
-        Item_Ola::computeGroupAssigneeRemoval((int) $this->fields['tickets_id'], (int) $this->fields['groups_id']);
+    $migration->setVersion('11.0.4');
 
-        parent::post_purgeItem();
+    $update_scripts = scandir($update_dir);
+    foreach ($update_scripts as $update_script) {
+        if (preg_match('/\.php$/', $update_script) !== 1) {
+            continue;
+        }
+        require $update_dir . $update_script;
     }
+
+    // ************ Keep it at the end **************
+    $migration->updateDisplayPrefs($ADDTODISPLAYPREF, $DELFROMDISPLAYPREF);
+
+    $migration->executeMigration();
+
+    return $updateresult;
 }

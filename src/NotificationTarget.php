@@ -39,8 +39,8 @@ use Glpi\Plugin\Hooks;
 /**
  * NotificationTarget Class
  *
- * @since 0.84
- **/
+ * @template T of CommonGLPI
+ */
 class NotificationTarget extends CommonDBChild
 {
     public $prefix                      = '';
