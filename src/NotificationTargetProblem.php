@@ -35,7 +35,9 @@
 
 /**
  * NotificationTargetProblem Class
- **/
+ *
+ * @extends NotificationTargetCommonITILObject<Problem>
+ */
 class NotificationTargetProblem extends NotificationTargetCommonITILObject
 {
     public $private_profiles = [];
