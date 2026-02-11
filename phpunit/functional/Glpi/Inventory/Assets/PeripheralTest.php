@@ -36,8 +36,6 @@ namespace tests\units\Glpi\Inventory\Asset;
 
 include_once __DIR__ . '/../../../../abstracts/AbstractInventoryAsset.php';
 
-/* Test for inc/inventory/asset/controller.class.php */
-
 class PeripheralTest extends AbstractInventoryAsset
 {
     public static function assetProvider(): array
@@ -118,6 +116,14 @@ class PeripheralTest extends AbstractInventoryAsset
             $idp->getFromDbByCrit(['computers_id' => $computer->fields['id'], 'itemtype' => 'Peripheral']),
             'Peripheral has not been linked to computer :('
         );
+
+        $peripheral = new \Peripheral();
+        $this->assertTrue(
+            $peripheral->getFromDB($idp->fields['items_id']),
+            'Peripheral does not exist.'
+        );
+
+        $this->assertSame($computer->fields['autoupdatesystems_id'], $peripheral->fields['autoupdatesystems_id'], 'Peripheral has not the same autoupdatesystems_id as computer :(');
     }
 
     public function testInventoryUpdate()

@@ -225,6 +225,21 @@ abstract class InventoryAsset
                 $manufacturer_name = $value->manufacturers_id;
             }
 
+            // Set autoupdate system for all assets contained in this field and linked to the current item.
+            // Extract the asset class name (e.g., "Monitor" from "Glpi\Inventory\Asset\Monitor")
+            $asset_itemtype_ns = explode('\\', get_class($this));
+            $asset_itemtype = end($asset_itemtype_ns);
+
+            if ($temp_item = getItemForItemtype($asset_itemtype)) {
+                if ($temp_item->isField('autoupdatesystems_id') && isset($this->item->fields['autoupdatesystems_id'])) {
+                    if ($this->item->fields['autoupdatesystems_id'] == 0) {
+                        $value->autoupdatesystems_id = 0;
+                    } else {
+                        $value->autoupdatesystems_id = Dropdown::getDropdownName('glpi_autoupdatesystems', $this->item->fields['autoupdatesystems_id']);
+                    }
+                }
+            }
+
             foreach ($value as $key => &$val) {
                 if ($val instanceof \stdClass || is_array($val)) {
                     continue;
