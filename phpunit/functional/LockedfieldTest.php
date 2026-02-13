@@ -34,8 +34,10 @@
 
 namespace tests\units;
 
+use Computer;
 use DbTestCase;
 use Location;
+use Manufacturer;
 
 /* Test for inc/savedsearch.class.php */
 
@@ -1034,7 +1036,297 @@ class LockedfieldTest extends DbTestCase
         $this->assertTrue($networkEquipment->getFromDB($networkEquipmentId), 'Network equipment item could not be retrieved from the database.');
 
         // Assert that the network equipment type is set to 0 (because of locked field)
-        $this->assertEquals(0, $networkEquipment->fields['networkequipmenttypes_id'], 'Network equipment type should be 0 before applying the global locked field.');
+        $this->assertGreaterThan(0, $networkEquipment->fields['networkequipmenttypes_id'], 'Network equipment type should be greater than 0 on first creation');
+    }
+
+
+    public function testglobalLockOnAddFromInventory()
+    {
+        //create global lock on Computer Name
+        $lockedfield = new \Lockedfield();
+        $this->assertGreaterThan(
+            0,
+            $lockedfield->add([
+                'item' => 'Computer - name',
+            ])
+        );
+
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
+<REQUEST>
+  <CONTENT>
+    <HARDWARE>
+      <NAME>pc002</NAME>
+    </HARDWARE>
+    <BIOS>
+      <SSN>ggheb7ne7</SSN>
+    </BIOS>
+    <VERSIONCLIENT>FusionInventory-Agent_v2.3.19</VERSIONCLIENT>
+  </CONTENT>
+  <DEVICEID>test-pc002</DEVICEID>
+  <QUERY>INVENTORY</QUERY>
+</REQUEST>";
+
+        $converter = new \Glpi\Inventory\Converter();
+        $data = $converter->convert($xml);
+        $json = json_decode($data);
+
+        $inventory = new \Glpi\Inventory\Inventory($json);
+
+        if ($inventory->inError()) {
+            $this->dump($inventory->getErrors());
+        }
+        $this->assertFalse($inventory->inError());
+        $this->assertEmpty($inventory->getErrors());
+
+        $computers_id = $inventory->getItem()->fields['id'];
+        $this->assertGreaterThan(0, $computers_id);
+
+        $computer = new \Computer();
+        $this->assertTrue($computer->getFromDB($computers_id));
+        // check that name is the one defined in inventory file on create
+        $this->assertEquals('pc002', $computer->fields['name']);
+
+        // rerun inventory with different name
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
+<REQUEST>
+  <CONTENT>
+    <HARDWARE>
+      <NAME>pc_with_other_name</NAME>
+    </HARDWARE>
+    <BIOS>
+      <SSN>ggheb7ne7</SSN>
+    </BIOS>
+    <VERSIONCLIENT>FusionInventory-Agent_v2.3.19</VERSIONCLIENT>
+  </CONTENT>
+  <DEVICEID>test-pc002</DEVICEID>
+  <QUERY>INVENTORY</QUERY>
+</REQUEST>";
+
+        $converter = new \Glpi\Inventory\Converter();
+        $data = $converter->convert($xml);
+        $json = json_decode($data);
+
+        $inventory = new \Glpi\Inventory\Inventory($json);
+
+        if ($inventory->inError()) {
+            $this->dump($inventory->getErrors());
+        }
+        $this->assertFalse($inventory->inError());
+        $this->assertEmpty($inventory->getErrors());
+
+        $computers_id = $inventory->getItem()->fields['id'];
+        $this->assertGreaterThan(0, $computers_id);
+
+        $computer = new \Computer();
+        $this->assertTrue($computer->getFromDB($computers_id));
+        // check that name is the one defined in inventory file on create
+        $this->assertEquals('pc002', $computer->fields['name']);
+    }
+
+    public function testglobalLockOnAddFromManualthenInventory()
+    {
+        global $DB;
+
+        //create global lock on Computer Name
+        $lockedfield = new \Lockedfield();
+        $this->assertGreaterThan(
+            0,
+            $lockedfield->add([
+                'item' => 'Computer - name',
+            ])
+        );
+
+        // create computer manually
+        $computer = new \Computer();
+        $cid = (int) $computer->add([
+            'name'         => 'Computer_create_manually',
+            'serial'       => 'ggheb7ne7',
+            'entities_id'  => 0,
+            'is_dynamic'   => 1,
+        ]);
+
+        $this->assertGreaterThan(0, $cid);
+
+        $this->assertTrue($computer->getFromDB($cid));
+        $this->assertEquals('Computer_create_manually', $computer->fields['name']);
+
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
+<REQUEST>
+  <CONTENT>
+    <HARDWARE>
+      <NAME>pc002</NAME>
+    </HARDWARE>
+    <BIOS>
+      <SSN>ggheb7ne7</SSN>
+    </BIOS>
+    <VERSIONCLIENT>FusionInventory-Agent_v2.3.19</VERSIONCLIENT>
+  </CONTENT>
+  <DEVICEID>test-pc002</DEVICEID>
+  <QUERY>INVENTORY</QUERY>
+</REQUEST>";
+
+        $converter = new \Glpi\Inventory\Converter();
+        $data = $converter->convert($xml);
+        $json = json_decode($data);
+
+        $inventory = new \Glpi\Inventory\Inventory($json);
+
+        if ($inventory->inError()) {
+            $this->dump($inventory->getErrors());
+        }
+        $this->assertFalse($inventory->inError());
+        $this->assertEmpty($inventory->getErrors());
+
+        $computers_id = $inventory->getItem()->fields['id'];
+        $this->assertGreaterThan(0, $computers_id);
+
+        $this->assertTrue($computer->getFromDB($computers_id));
+        // check that name is always the one set manually
+        $this->assertEquals('Computer_create_manually', $computer->fields['name']);
+
+    }
+
+
+    public function testglobalLockOnInputTextAddInventory()
+    {
+        $computer = new Computer();
+
+        //create global lock on Computer Name
+        $lockedfield = new \Lockedfield();
+        $this->assertGreaterThan(
+            0,
+            $lockedfield->add([
+                'item' => 'Computer - name',
+            ])
+        );
+
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
+<REQUEST>
+  <CONTENT>
+    <HARDWARE>
+      <NAME>pc002</NAME>
+    </HARDWARE>
+    <BIOS>
+      <SSN>ggheb7ne7</SSN>
+    </BIOS>
+    <VERSIONCLIENT>FusionInventory-Agent_v2.3.19</VERSIONCLIENT>
+  </CONTENT>
+  <DEVICEID>test-pc002</DEVICEID>
+  <QUERY>INVENTORY</QUERY>
+</REQUEST>";
+
+        $converter = new \Glpi\Inventory\Converter();
+        $data = $converter->convert($xml);
+        $json = json_decode($data);
+
+        $inventory = new \Glpi\Inventory\Inventory($json);
+
+        if ($inventory->inError()) {
+            $this->dump($inventory->getErrors());
+        }
+        $this->assertFalse($inventory->inError());
+        $this->assertEmpty($inventory->getErrors());
+
+        $computers_id = $inventory->getItem()->fields['id'];
+        $this->assertGreaterThan(0, $computers_id);
+
+        $this->assertTrue($computer->getFromDB($computers_id));
+        // check that name is the one defined by inventory
+        $this->assertEquals('pc002', $computer->fields['name']);
+
+    }
+
+    public function testglobalLockOnForeignKeyTextAddInventory()
+    {
+        $computer = new Computer();
+
+        //create global lock on Computer Manufacturer
+        $lockedfield = new \Lockedfield();
+        $this->assertGreaterThan(
+            0,
+            $lockedfield->add([
+                'item' => 'Computer - manufacturers_id',
+            ])
+        );
+
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
+<REQUEST>
+  <CONTENT>
+    <HARDWARE>
+      <NAME>pc002</NAME>
+    </HARDWARE>
+    <BIOS>
+      <BMANUFACTURER>Intel</BMANUFACTURER>,
+      <SSN>ggheb7ne7</SSN>
+    </BIOS>
+    <VERSIONCLIENT>FusionInventory-Agent_v2.3.19</VERSIONCLIENT>
+  </CONTENT>
+  <DEVICEID>test-pc002</DEVICEID>
+  <QUERY>INVENTORY</QUERY>
+</REQUEST>";
+
+        $converter = new \Glpi\Inventory\Converter();
+        $data = $converter->convert($xml);
+        $json = json_decode($data);
+
+        $inventory = new \Glpi\Inventory\Inventory($json);
+
+        if ($inventory->inError()) {
+            $this->dump($inventory->getErrors());
+        }
+
+        $this->assertFalse($inventory->inError());
+        $this->assertEmpty($inventory->getErrors());
+
+        $computers_id = $inventory->getItem()->fields['id'];
+        $this->assertGreaterThan(0, $computers_id);
+
+        $this->assertTrue($computer->getFromDB($computers_id));
+
+        $manufacturer = new Manufacturer();
+        $this->assertTrue($manufacturer->getFromDB($computer->fields['manufacturers_id']));
+
+        $this->assertEquals('Intel', $manufacturer->fields['name']);
+
+
+        // rerun inventory and change Manufacturer
+        $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
+<REQUEST>
+  <CONTENT>
+    <HARDWARE>
+      <NAME>pc002</NAME>
+    </HARDWARE>
+    <BIOS>
+      <BMANUFACTURER>Nvidia</BMANUFACTURER>,
+      <SSN>ggheb7ne7</SSN>
+    </BIOS>
+    <VERSIONCLIENT>FusionInventory-Agent_v2.3.19</VERSIONCLIENT>
+  </CONTENT>
+  <DEVICEID>test-pc002</DEVICEID>
+  <QUERY>INVENTORY</QUERY>
+</REQUEST>";
+
+        $converter = new \Glpi\Inventory\Converter();
+        $data = $converter->convert($xml);
+        $json = json_decode($data);
+
+        $inventory = new \Glpi\Inventory\Inventory($json);
+
+        if ($inventory->inError()) {
+            $this->dump($inventory->getErrors());
+        }
+
+        $this->assertFalse($inventory->inError());
+        $this->assertEmpty($inventory->getErrors());
+
+        $computers_id = $inventory->getItem()->fields['id'];
+        $this->assertGreaterThan(0, $computers_id);
+
+        $this->assertTrue($computer->getFromDB($computers_id));
+
+        $manufacturer = new Manufacturer();
+        $this->assertTrue($manufacturer->getFromDB($computer->fields['manufacturers_id']));
+        $this->assertEquals('Intel', $manufacturer->fields['name']);
     }
 
 }
