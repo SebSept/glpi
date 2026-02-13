@@ -1974,19 +1974,20 @@ class Ticket extends CommonITILObject implements DefaultSearchRequestInterface
     #[Override]
     public function updateDateMod($ID, $no_stat_computation = false, $users_id_lastupdater = 0)
     {
-
-        if ($this->getFromDB($ID)) {
+        $ticket = new Ticket();
+        if ($ticket->getFromDB($ID)) {
             if (
                 !$no_stat_computation
                 && !$this->isAlreadyTakenIntoAccount()
                 && ($this->canTakeIntoAccount() || isCommandLine())
             ) {
-                $this->update(
+                $ticket->update(
                     [
                         'id'                         => $ID,
                         'takeintoaccount_delay_stat' => $this->computeTakeIntoAccountDelayStat(),
                         'takeintoaccountdate'        => $_SESSION["glpi_currenttime"],
                         '_disablenotif'              => true,
+                        '_skip_rules'                => true,
                     ]
                 );
             }
