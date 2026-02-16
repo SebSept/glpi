@@ -43,20 +43,20 @@ class EventTest extends DbTestCase
     #[DataProvider('eventLogLevelThresholdDataProvider')]
     public function testEventLogThreshold(int $level, int $threshold, bool $should_be_logged_in_file, bool $should_be_logged_in_db): void
     {
-        // --- arrange
+        // --- arrange ---
         global $CFG_GLPI;
 
-        $CFG_GLPI["use_log_in_files"] = 1; // ensure file logging is enabled
+        $CFG_GLPI["use_log_in_files"] = 1;
         $CFG_GLPI["event_loglevel"] = $threshold;
-        $log_file = GLPI_LOG_DIR . "/event.log"; // event.log is hardcoded \Glpi\Event::log()
+        $log_file = GLPI_LOG_DIR . "/event.log";
         $log_service = $this->getUniqueString();
-        file_put_contents($log_file, ""); // empty log file for easier debugging
+        
+        assert(file_put_contents($log_file, "") !== false, 'Failed to empty log file');
 
-        // --- act
+        // --- act ---
         Event::log(0, self::class, $level, $log_service, 'event');
 
-        // --- assert
-        // logged in DB
+        // --- assert ---
         $expected_count = $should_be_logged_in_db ? 1 : 0;
         $this->assertEquals(
             $expected_count,
@@ -66,11 +66,12 @@ class EventTest extends DbTestCase
             )
         );
 
-        // logged in file
         $this->assertEquals(
             $should_be_logged_in_file,
             str_contains(file_get_contents($log_file), "[$log_service]")
         );
+
+        $this->markTestIncomplete('This test is ai generated, it must be reviewed/rewritten by a human.');
     }
 
     public static function eventLogLevelThresholdDataProvider(): iterable
@@ -80,9 +81,7 @@ class EventTest extends DbTestCase
                 yield "level=$level, threshold=$threshold" => [
                     'level' => $level,
                     'threshold' => $threshold,
-                    'should_be_logged_in_file'
-                        => ($level <= $threshold) // should be logged if level is equal or more critical than threshold (notice glpi level are inverted compared to PSR)
-                        && $level <= 3, // no logging for level higher than 3
+                    'should_be_logged_in_file' => ($level <= $threshold) && $level <= 3,
                     'should_be_logged_in_db' => $level <= $threshold,
                 ];
             }
