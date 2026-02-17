@@ -14,6 +14,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/inc/relation.constant.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method class@anonymous/install/empty_data\\.php\\:50\\:\\:getEmptyData\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/install/empty_data.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^PHPDoc tag @var for variable \\$CFG_GLPI has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -182,13 +188,43 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/install/migrations/update_9.5.x_to_10.0.0/native_inventory.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method APIClient\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/APIClient.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method APIClient\\:\\:getLogMethod\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/APIClient.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method APIClient\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/APIClient.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method APIClient\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/APIClient.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method APIClient\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/APIClient.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method APIClient\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/APIClient.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property APIClient\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/APIClient.php',
@@ -324,6 +360,90 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/AbstractRightsDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:getAgentURLs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:guessAddresses\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:handleAgent\\(\\) has parameter \\$metadata with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:handleAgentResponse\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:prepareInputs\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:prepareInputs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:requestInventory\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:requestStatus\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Agent\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Agent.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Ajax\\:\\:commonDropdownUpdateItem\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
@@ -476,6 +596,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Appliance.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Appliance\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Appliance.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Appliance\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -603,6 +729,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Appliance\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Appliance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Appliance\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Appliance.php',
@@ -770,6 +902,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Auth.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Auth\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Auth.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Auth\\:\\:userExists\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -795,6 +933,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method AuthLDAP\\:\\:checkFilesExist\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthLDAP.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method AuthLDAP\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/AuthLDAP.php',
@@ -932,6 +1076,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/AuthLDAP.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method AuthLDAP\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthLDAP.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method AuthLDAP\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthLDAP.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method AuthLDAP\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1034,6 +1190,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/AuthLDAP.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method AuthLDAP\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthLDAP.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method AuthLDAP\\:\\:searchForUsers\\(\\) has parameter \\$attrs with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1124,13 +1286,31 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/AuthLDAP.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Property AuthLDAP\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthLDAP.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method AuthLdapReplicate\\:\\:getForbiddenStandardMassiveAction\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/AuthLdapReplicate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method AuthMail\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthMail.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method AuthMail\\:\\:mailAuth\\(\\) has parameter \\$mail_method with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/AuthMail.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method AuthMail\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/AuthMail.php',
@@ -1238,6 +1418,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Blacklist.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Blacklist\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Blacklist.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Blacklist\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Blacklist.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Blacklist\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1287,6 +1479,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Blacklist\\:\\:prepareInputForClone\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Blacklist.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Blacklist\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Blacklist.php',
@@ -1358,6 +1556,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/BlacklistedMailContent.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method BlacklistedMailContent\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/BlacklistedMailContent.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Budget\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1377,6 +1581,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Budget\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Budget.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Budget\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Budget.php',
@@ -1412,6 +1622,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Budget.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Budget\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Budget.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Budget\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1437,6 +1653,24 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Cable\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Cable\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Cable\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Cable\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Cable.php',
@@ -1473,6 +1707,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Cable\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Cable\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Cable\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Cable.php',
@@ -1556,10 +1802,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Cable.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Cable\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Cable\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Cable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CableStrand\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CableStrand.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Calendar\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -1581,6 +1839,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Calendar\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Calendar.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Calendar\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Calendar.php',
@@ -1784,6 +2048,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CartridgeItem.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CartridgeItem\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CartridgeItem.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CartridgeItem\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1898,6 +2168,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CartridgeItem.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CartridgeItem\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CartridgeItem.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CartridgeItem\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -1908,6 +2184,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CartridgeItem_PrinterModel.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Central\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Central.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Central\\:\\:getMessages\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -1941,6 +2223,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Certificate\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Certificate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Certificate\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Certificate.php',
@@ -2066,6 +2354,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Certificate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Certificate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Certificate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Certificate\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -2088,6 +2382,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Certificate_Item.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Change\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Change.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Change\\:\\:getAllStatusArray\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -2151,6 +2451,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Change\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Change.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Change\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Change.php',
@@ -2306,6 +2612,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Cluster.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Cluster\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cluster.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Cluster\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -2415,6 +2727,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Cluster\\:\\:prepareInputForUpdate\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Cluster.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Cluster\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Cluster.php',
@@ -2703,6 +3021,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonDBRelation\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBRelation.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonDBRelation\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonDBRelation.php',
@@ -3056,6 +3380,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDBTM.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDBTM\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBTM.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonDBTM\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBTM.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDBTM\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -3158,6 +3494,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDBTM.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDBTM\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBTM.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDBTM\\:\\:restore\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -3206,6 +3548,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDBTM.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDBTM\\:\\:unsetUndisclosedFields\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBTM.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDBTM\\:\\:update\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -3230,7 +3578,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDBTM.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Property CommonDBTM\\:\\:\\$search_options_cache type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBTM.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Property CommonDBTM\\:\\:\\$searchopt type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDBTM.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property CommonDBTM\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonDBTM.php',
@@ -3332,6 +3692,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDCModelDropdown.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDCModelDropdown\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDCModelDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonDCModelDropdown\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDCModelDropdown.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDCModelDropdown\\:\\:getUniqueCloneName\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -3374,10 +3746,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDCModelDropdown.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDCModelDropdown\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDCModelDropdown.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDCModelDropdown\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonDCModelDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonDevice\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDevice.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonDevice\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
@@ -3410,7 +3794,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDevice.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDevice\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDevice.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDevice\\:\\:import\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDevice.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonDevice\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonDevice.php',
@@ -3470,6 +3866,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDeviceModel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDropdown\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDropdown.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDropdown\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -3501,6 +3903,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonDropdown\\:\\:getForbiddenSingleMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonDropdown\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonDropdown.php',
@@ -3542,10 +3950,34 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonDropdown.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonDropdown\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonDropdown.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonDropdown\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:addDefaultFormTab\\(\\) has parameter \\$ong with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:addImpactTab\\(\\) has parameter \\$ong with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:addStandardTab\\(\\) has parameter \\$ong with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonGLPI\\:\\:can\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -3554,7 +3986,49 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonGLPI.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:defineAllTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:display\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonGLPI\\:\\:displayStandardTab\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:getAdditionalMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonGLPI\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonGLPI.php',
@@ -3567,6 +4041,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonGLPI\\:\\:showTabsContent\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonGLPI.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property CommonGLPI\\:\\:\\$othertabs type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonGLPI.php',
@@ -3591,6 +4071,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILCost\\:\\:getLastCostForItem\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILCost.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILCost\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILCost.php',
@@ -3621,6 +4107,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Class CommonITILObject has PHPDoc tag @property\\-read for property \\$users with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILObject.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILObject\\:\\:addDefaultFormTab\\(\\) has parameter \\$ong with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILObject.php',
@@ -3753,6 +4245,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILObject\\:\\:getActorsForType\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILObject.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILObject\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILObject.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILObject\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILObject.php',
@@ -3969,6 +4473,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILObject\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILObject.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILObject\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILObject.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILObject\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILObject.php',
@@ -4454,6 +4970,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonITILRecurrent\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonITILRecurrent\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -4479,6 +5001,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILRecurrent\\:\\:getRelatedElements\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILRecurrent\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILRecurrent\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
@@ -4526,6 +5060,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonITILRecurrent\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILRecurrent.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonITILRecurrentCron\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -4533,6 +5073,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILSatisfaction\\:\\:getLogTypeID\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILSatisfaction.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILSatisfaction\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILSatisfaction.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILSatisfaction\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILSatisfaction.php',
@@ -4664,6 +5216,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonITILTask.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonITILTask\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILTask\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILTask.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonITILTask\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -4701,6 +5265,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILTask\\:\\:prepareGuestsInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILTask\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILTask.php',
@@ -4808,6 +5378,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonITILValidation.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonITILValidation\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILValidation.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILValidation\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILValidation.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonITILValidation\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -4827,6 +5409,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonITILValidation\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonITILValidation.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonITILValidation\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonITILValidation.php',
@@ -4976,6 +5564,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonItilObject_Item.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonItilObject_Item\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonItilObject_Item.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonItilObject_Item\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonItilObject_Item.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonItilObject_Item\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5006,6 +5606,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CommonItilObject_Item.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CommonItilObject_Item\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonItilObject_Item.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CommonItilObject_Item\\:\\:showItemToAdd\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5025,6 +5631,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonTreeDropdown\\:\\:adaptTreeFieldsFromUpdateOrAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonTreeDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonTreeDropdown\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonTreeDropdown.php',
@@ -5067,6 +5679,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CommonTreeDropdown\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CommonTreeDropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CommonTreeDropdown\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CommonTreeDropdown.php',
@@ -5145,6 +5763,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Computer\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Computer.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Computer\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Computer.php',
@@ -5270,6 +5894,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Computer.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Computer\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Computer.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Property Computer\\:\\:\\$devices type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5289,6 +5919,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Config\\:\\:checkExtensions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Config.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Config\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Config.php',
@@ -5342,6 +5978,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Config.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Config\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Config.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Config\\:\\:getNoReplyEmailSender\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5378,6 +6020,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Config.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Config\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Config.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Config\\:\\:setConfigurationValues\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5396,7 +6044,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Config.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Config\\:\\:unsetUndisclosedFields\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Config.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^PHPDoc tag @var for variable \\$CFG_GLPI has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Config.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Config\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Config.php',
@@ -5468,6 +6128,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Consumable.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Consumable\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Consumable.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Consumable\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Consumable.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Consumable\\:\\:getUniqueCloneName\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5498,6 +6170,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Consumable.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Consumable\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Consumable.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ConsumableItem\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5523,6 +6201,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ConsumableItem\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ConsumableItem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ConsumableItem\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ConsumableItem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ConsumableItem\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ConsumableItem.php',
@@ -5642,6 +6332,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ConsumableItem.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ConsumableItem\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ConsumableItem.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ConsumableItem\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5667,6 +6363,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Contact\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contact.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Contact\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Contact.php',
@@ -5726,6 +6428,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Contact.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Contact\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contact.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Contact\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5768,6 +6476,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Contract.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Contract\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Contract\\:\\:dropdown\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5799,6 +6513,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Contract\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Contract\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Contract\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Contract.php',
@@ -5852,6 +6578,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Contract.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Contract\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Contract\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5865,6 +6597,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ContractCost\\:\\:getLastCostForContract\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ContractCost.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ContractCost\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ContractCost.php',
@@ -5894,6 +6632,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Contract_Item.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Contract_Item\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract_Item.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Contract_Item\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract_Item.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Contract_Item\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5901,6 +6651,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Contract_Item\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Contract_Item.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Contract_Item\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Contract_Item.php',
@@ -5930,6 +6686,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/CronTask.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method CronTask\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CronTask.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method CronTask\\:\\:getForbiddenStandardMassiveAction\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -5937,6 +6699,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CronTask\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CronTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CronTask\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CronTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CronTask\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CronTask.php',
@@ -5955,6 +6729,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method CronTask\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/CronTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method CronTask\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/CronTask.php',
@@ -6050,18 +6830,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DBmysql.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method DBmysql\\:\\:deleteOrDie\\(\\) has parameter \\$joins with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/DBmysql.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method DBmysql\\:\\:deleteOrDie\\(\\) has parameter \\$where with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/DBmysql.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Method DBmysql\\:\\:fetchQueryWarnings\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6098,12 +6866,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DBmysql.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method DBmysql\\:\\:insertOrDie\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/DBmysql.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Method DBmysql\\:\\:listTables\\(\\) has parameter \\$where with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6129,24 +6891,6 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DBmysql\\:\\:update\\(\\) has parameter \\$where with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/DBmysql.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method DBmysql\\:\\:updateOrDie\\(\\) has parameter \\$joins with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/DBmysql.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method DBmysql\\:\\:updateOrDie\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/DBmysql.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method DBmysql\\:\\:updateOrDie\\(\\) has parameter \\$where with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DBmysql.php',
@@ -6236,6 +6980,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DBmysqlIterator.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DCRoom\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DCRoom.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DCRoom\\:\\:getAllPositions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6260,6 +7010,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DCRoom.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DCRoom\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DCRoom.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DCRoom\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6272,7 +7028,31 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DCRoom.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Database\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Database.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Database\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Database.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Database\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Database.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Database\\:\\:getCloneRelations\\(\\) return type has no value type specified in iterable type array\\<mixed\\>\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Database.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Database\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Database.php',
@@ -6309,6 +7089,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DatabaseInstance\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DatabaseInstance\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DatabaseInstance.php',
@@ -6357,6 +7143,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DatabaseInstance\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DatabaseInstance\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DatabaseInstance\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DatabaseInstance.php',
@@ -6434,10 +7232,34 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DatabaseInstance.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DatabaseInstance\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DatabaseInstance\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Datacenter\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Datacenter.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Datacenter\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Datacenter.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Datacenter\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Datacenter.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Datacenter\\:\\:managePictures\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -6447,6 +7269,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Datacenter\\:\\:managePictures\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Datacenter.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Datacenter\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Datacenter.php',
@@ -6512,6 +7340,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DefaultFilter.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DefaultFilter\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DefaultFilter.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DefaultFilter\\:\\:saveFilter\\(\\) has parameter \\$search_criteria with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6536,6 +7370,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceBattery.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceBattery\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceBattery.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceCamera\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceCamera.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceCamera\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6549,6 +7395,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DeviceCamera\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceCamera.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceCamera\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DeviceCamera.php',
@@ -6572,6 +7424,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceCase.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceCase\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceCase.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceControl\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6585,6 +7443,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DeviceControl\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceControl.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceControl\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DeviceControl.php',
@@ -6608,6 +7472,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceDrive.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceDrive\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceDrive.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceFirmware\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6621,6 +7491,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DeviceFirmware\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceFirmware.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceFirmware\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DeviceFirmware.php',
@@ -6656,6 +7532,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceGeneric.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceGeneric\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceGeneric.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceGraphicCard\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6681,6 +7563,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DeviceGraphicCard\\:\\:prepareInputForAddOrUpdate\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceGraphicCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceGraphicCard\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DeviceGraphicCard.php',
@@ -6728,6 +7616,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceHardDrive.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceHardDrive\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceHardDrive.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceHardDrive\\:\\:rawSearchOptionsToAdd\\(\\) has parameter \\$main_joinparams with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6770,6 +7664,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceMemory.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceMemory\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceMemory.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceMemory\\:\\:rawSearchOptionsToAdd\\(\\) has parameter \\$main_joinparams with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6795,6 +7695,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DeviceMotherboard\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceMotherboard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceMotherboard\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DeviceMotherboard.php',
@@ -6836,6 +7742,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceNetworkCard.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceNetworkCard\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceNetworkCard.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceNetworkCard\\:\\:rawSearchOptionsToAdd\\(\\) has parameter \\$main_joinparams with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6849,6 +7761,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DevicePci\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DevicePci.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DevicePci\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DevicePci.php',
@@ -6879,6 +7797,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DevicePowerSupply\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DevicePowerSupply.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DevicePowerSupply\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DevicePowerSupply.php',
@@ -6926,6 +7850,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceProcessor.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceProcessor\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceProcessor.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceProcessor\\:\\:rawSearchOptionsToAdd\\(\\) has parameter \\$main_joinparams with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6956,7 +7886,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceSensor.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceSensor\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceSensor.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceSimcard\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceSimcard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DeviceSimcard\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DeviceSimcard.php',
@@ -6980,6 +7922,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DeviceSoundCard.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DeviceSoundCard\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DeviceSoundCard.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DeviceSoundCard\\:\\:rawSearchOptionsToAdd\\(\\) has parameter \\$main_joinparams with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -6993,6 +7941,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DisplayPreference\\:\\:activatePerso\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DisplayPreference.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DisplayPreference\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DisplayPreference.php',
@@ -7028,6 +7982,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DisplayPreference.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DisplayPreference\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DisplayPreference.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DisplayPreference\\:\\:updateOrder\\(\\) has parameter \\$order with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -7041,6 +8001,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Document\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Document.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Document\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Document.php',
@@ -7094,6 +8060,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Document.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Document\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Document.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Document\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -7124,6 +8096,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DocumentType.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DocumentType\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DocumentType.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DocumentType\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DocumentType.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DocumentType\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -7131,6 +8115,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DocumentType\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DocumentType.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DocumentType\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/DocumentType.php',
@@ -7250,6 +8240,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Domain.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Domain\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Domain.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Domain\\:\\:dropdownDomains\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -7269,6 +8265,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Domain\\:\\:generateLinkContents\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Domain.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Domain\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Domain.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Domain\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Domain.php',
@@ -7412,10 +8420,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Domain.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Domain\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Domain.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Domain\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Domain.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method DomainRecord\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DomainRecord.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method DomainRecord\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -7472,6 +8492,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DomainRecord.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DomainRecord\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DomainRecord.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DomainRecord\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -7514,6 +8540,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/DomainRecordType.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method DomainRelation\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/DomainRelation.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method DomainRelation\\:\\:getDefaults\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -7527,6 +8559,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Domain_Item\\:\\:addItem\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Domain_Item.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Domain_Item\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Domain_Item.php',
@@ -7886,6 +8924,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Enclosure.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Enclosure\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Enclosure.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Enclosure\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -8006,10 +9050,28 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Enclosure.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Enclosure\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Enclosure.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Enclosure\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Enclosure.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Entity\\:\\:checkRightDatas\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Entity.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Entity\\:\\:checkRightDatas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Entity.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Entity\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -8031,6 +9093,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Entity\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Entity.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Entity\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Entity.php',
@@ -8097,6 +9165,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Entity\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Entity.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Entity\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Entity.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Entity\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Entity.php',
@@ -8192,6 +9272,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Entity.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Entity\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Entity.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Entity\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -8228,6 +9314,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ExtraVisibilityCriteria.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method FQDN\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/FQDN.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method FQDN\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -8241,6 +9333,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method FQDN\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/FQDN.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method FQDN\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/FQDN.php',
@@ -8294,6 +9392,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/FQDNLabel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method FieldUnicity\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/FieldUnicity.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method FieldUnicity\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -8313,6 +9417,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method FieldUnicity\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/FieldUnicity.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method FieldUnicity\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/FieldUnicity.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method FieldUnicity\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/FieldUnicity.php',
@@ -8348,6 +9464,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/FieldUnicity.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method FieldUnicity\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/FieldUnicity.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Fieldblacklist\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -8372,6 +9494,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Fieldblacklist.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Fieldblacklist\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Fieldblacklist.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Fieldblacklist\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Fieldblacklist.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Fieldblacklist\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -8379,6 +9513,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Fieldblacklist\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Fieldblacklist.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Fieldblacklist\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Fieldblacklist.php',
@@ -8466,6 +9606,60 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/GLPIUploadHandler.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\AbstractRequest\\:\\:addNode\\(\\) has parameter \\$content with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/AbstractRequest.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\AbstractRequest\\:\\:addToResponse\\(\\) has parameter \\$entries with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/AbstractRequest.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\AbstractRequest\\:\\:getHeaders\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/AbstractRequest.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\AbstractRequest\\:\\:handleTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/AbstractRequest.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Agent\\\\Communication\\\\AbstractRequest\\:\\:\\$response type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/AbstractRequest.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\Headers\\\\Common\\:\\:getHeaders\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/Headers/Common.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\Headers\\\\Common\\:\\:getHeadersNames\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/Headers/Common.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\Headers\\\\Common\\:\\:getRequireds\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/Headers/Common.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Agent\\\\Communication\\\\Headers\\\\Common\\:\\:setHeaders\\(\\) has parameter \\$headers with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Agent/Communication/Headers/Common.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Altcha\\\\AltchaManager\\:\\:decodePayload\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -9890,6 +11084,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/AbstractController.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\AbstractController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/AbstractController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\AdministrationController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/AdministrationController.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\AdministrationController\\:\\:getUsedOrManagedItems\\(\\) has parameter \\$request_params with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -9914,7 +11120,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/AssetController.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\AssetController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/AssetController.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ComponentController\\:\\:getComponentTypes\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ComponentController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ComponentController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ComponentController.php',
@@ -9924,6 +11142,24 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/CoreController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\CoreController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/CoreController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\CustomAssetController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/CustomAssetController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\DropdownController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/DropdownController.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ITILController\\:\\:getITILTimelineItems\\(\\) has parameter \\$subitem_types with no value type specified in iterable type array\\.$#',
@@ -9944,6 +11180,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ITILController.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ITILController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ITILController.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ITILController\\:\\:getRequiredTimelineItemFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -9956,10 +11198,46 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ManagementController.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ManagementController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ManagementController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ProjectController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ProjectController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ReportController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ReportController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\RuleController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/RuleController.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\RuleController\\:\\:getRuleCollections\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/RuleController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\SetupController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/SetupController.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Controller\\\\ToolController\\:\\:getRawKnownSchemas\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/Controller/ToolController.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Doc\\\\Response\\:\\:__construct\\(\\) has parameter \\$examples with no value type specified in iterable type array\\.$#',
@@ -10176,6 +11454,36 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Api/HL/GraphQL.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\GraphQLGenerator\\:\\:convertRESTPropertyToGraphQLType\\(\\) has parameter \\$property with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/GraphQLGenerator.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\GraphQLGenerator\\:\\:convertRESTSchemaToGraphQLSchema\\(\\) has parameter \\$schema with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/GraphQLGenerator.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\GraphQLGenerator\\:\\:getTypesForSchema\\(\\) has parameter \\$schema with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/GraphQLGenerator.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\GraphQLGenerator\\:\\:getTypesForSchema\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/GraphQLGenerator.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Api\\\\HL\\\\GraphQLGenerator\\:\\:\\$types type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Api/HL/GraphQLGenerator.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Api\\\\HL\\\\Middleware\\\\MiddlewareInput\\:\\:__construct\\(\\) has parameter \\$client with no value type specified in iterable type array\\.$#',
@@ -11036,6 +12344,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Asset/Asset.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Asset\\\\Asset\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Asset/Asset.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Asset\\\\Asset\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -11144,6 +12458,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Asset/AssetModel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Asset\\\\AssetModel\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Asset/AssetModel.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Asset\\\\AssetType\\:\\:getSystemSQLCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -11157,6 +12477,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Asset\\\\AssetType\\:\\:prepareDefinitionInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Asset/AssetType.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Asset\\\\AssetType\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Asset/AssetType.php',
@@ -11346,6 +12672,18 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Asset/CapacityConfig.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Asset\\\\CustomFieldDefinition\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Asset/CustomFieldDefinition.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Asset\\\\CustomFieldDefinition\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Asset/CustomFieldDefinition.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Asset\\\\CustomFieldDefinition\\:\\:prepareInputForAddAndUpdate\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -12410,6 +13748,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Csv/StatCsvExport.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/CustomObject/AbstractDefinition.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:getDecodedTranslationsField\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -12423,6 +13767,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:getPossibleCustomObjectRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/CustomObject/AbstractDefinition.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/CustomObject/AbstractDefinition.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/CustomObject/AbstractDefinition.php',
@@ -12447,6 +13803,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/CustomObject/AbstractDefinition.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\CustomObject\\\\AbstractDefinition\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/CustomObject/AbstractDefinition.php',
@@ -12804,12 +14166,6 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Dashboard/FakeProvider.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Dashboard\\\\Filter\\:\\:getAll\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Dashboard/Filter.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Dashboard\\\\Filter\\:\\:getAppliableFilters\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -13568,10 +14924,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Dropdown/Dropdown.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Dropdown\\\\Dropdown\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Dropdown/Dropdown.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Dropdown\\\\Dropdown\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Dropdown/Dropdown.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Dropdown\\\\DropdownDefinition\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Dropdown/DropdownDefinition.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Event\\:\\:add\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -13592,7 +14960,25 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Event.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Event\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Event.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Event\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Event.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Event\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Event.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Event\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Event.php',
@@ -13623,6 +15009,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Event\\:\\:logArray\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Event.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Event\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Event.php',
@@ -14186,6 +15578,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Form/AnswersSet.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\AnswersSet\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/AnswersSet.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\AnswersSet\\:\\:setSubmittedFiles\\(\\) has parameter \\$files with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -14217,6 +15615,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\Category\\:\\:insertTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Category.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Category\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Form/Category.php',
@@ -14586,6 +15990,18 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Form/Condition/EditorManager.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Form\\\\Condition\\\\Engine\\:\\:\\$processing_stack type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Condition/Engine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Form\\\\Condition\\\\Engine\\:\\:\\$visibility_cache type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Condition/Engine.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\Condition\\\\EngineCreationOutput\\:\\:jsonSerialize\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -15776,6 +17192,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Form/Destination/CommonITILField/LocationFieldConfig.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Destination\\\\CommonITILField\\\\OLAField\\:\\:applyConfiguratedValueToInputUsingAnswers\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Destination/CommonITILField/OLAField.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Destination\\\\CommonITILField\\\\OLAField\\:\\:applyConfiguratedValueToInputUsingAnswers\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Destination/CommonITILField/OLAField.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\Destination\\\\CommonITILField\\\\OLATTOFieldConfig\\:\\:jsonDeserialize\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -15894,6 +17322,18 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Form/Destination/CommonITILField/RequesterFieldConfig.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Destination\\\\CommonITILField\\\\SLAField\\:\\:applyConfiguratedValueToInputUsingAnswers\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Destination/CommonITILField/SLAField.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Destination\\\\CommonITILField\\\\SLAField\\:\\:applyConfiguratedValueToInputUsingAnswers\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Destination/CommonITILField/SLAField.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\Destination\\\\CommonITILField\\\\SLATTOFieldConfig\\:\\:jsonDeserialize\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
@@ -16706,6 +18146,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Form/Form.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Form\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Form.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Form\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Form.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\Form\\:\\:getCloneRelations\\(\\) return type has no value type specified in iterable type array\\<mixed\\>\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -16761,6 +18213,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Form\\\\Form\\:\\:prepareInputForClone\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Form/Form.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Form\\\\Form\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Form/Form.php',
@@ -18032,6 +19490,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Helpdesk/HelpdeskTranslation.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Helpdesk\\\\HomePageTabs\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Helpdesk/HomePageTabs.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Helpdesk\\\\HomePageTabs\\:\\:showTicketList\\(\\) has parameter \\$criteria with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -18084,6 +19548,1122 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Http/SessionManager.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Antivirus\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Antivirus.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Antivirus\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Antivirus.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Battery\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Battery.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Bios\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Bios.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Camera\\:\\:handleFormats\\(\\) has parameter \\$val with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Camera.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Camera\\:\\:handleResolution\\(\\) has parameter \\$val with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Camera.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Camera\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Camera.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Cartridge\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Cartridge.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Cartridge\\:\\:knownTags\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Cartridge.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Cartridge\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Cartridge.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Controller\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Controller.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Controller\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Controller.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\DatabaseInstance\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\DatabaseInstance\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/DatabaseInstance.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Device\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Device.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Drive\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Drive.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Drive\\:\\:\\$prepared_harddrives type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Drive.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Environment\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Environment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Environment\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Environment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Firmware\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Firmware.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\GraphicCard\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/GraphicCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\GraphicCard\\:\\:\\$ignored type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/GraphicCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\HardDrive\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/HardDrive.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:__construct\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:addOrMoveItem\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:getData\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:getIgnored\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:handleInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:handleLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:setData\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:setExtraData\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$known_links type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$raw_links type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$ruleentity_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$rulelocation_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\InventoryAsset\\:\\:\\$rulematchedlog_input type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/InventoryAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Memory\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Memory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Monitor\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Monitor.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Monitor\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Monitor.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:addIPAddresses\\(\\) has parameter \\$ips with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:addNetworkPorts\\(\\) has parameter \\$ports with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:getNetworkPorts\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:\\$cards_macs type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:\\$ignored type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:\\$networks type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkCard\\:\\:\\$ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:addIPAddresses\\(\\) has parameter \\$ips with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:addNetworkPorts\\(\\) has parameter \\$ports with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:getNetworkPorts\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:getPart\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:handleHub\\(\\) has parameter \\$found_macs with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:prepareConnections\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:prepareVlans\\(\\) has parameter \\$vlans with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:prepareVlans\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:rulepassed\\(\\) has parameter \\$ports_id with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:\\$aggregates type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:\\$connection_ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:\\$connections type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:\\$networks type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:\\$ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\NetworkPort\\:\\:\\$vlans type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\OperatingSystem\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/OperatingSystem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\OperatingSystem\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/OperatingSystem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Peripheral\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Peripheral.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Peripheral\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Peripheral.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\PowerSupply\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/PowerSupply.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Printer\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Printer.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Process\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Process.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Process\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Process.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Processor\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Processor.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\RemoteManagement\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/RemoteManagement.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\RemoteManagement\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/RemoteManagement.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Sensor\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Sensor.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Simcard\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Simcard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:cleanInputToPrepare\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:cleanInputToPrepare\\(\\) has parameter \\$known_fields with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:cleanInputToPrepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:getCompareKey\\(\\) has parameter \\$parts with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:getNormalizedComparisonKey\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$added_versions type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$current_versions type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$deleted_versions type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$items_versions type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$softwares type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$updated_versions type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\Software\\:\\:\\$versions type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\SoundCard\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/SoundCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\SoundCard\\:\\:\\$ignored type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/SoundCard.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:addIPAddresses\\(\\) has parameter \\$ips with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:addNetworkPorts\\(\\) has parameter \\$ports with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:getNetworkPorts\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:\\$allports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:\\$networks type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Asset\\\\VirtualMachine\\:\\:\\$ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/VirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Volume\\:\\:getExisting\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Volume.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Asset\\\\Volume\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Asset/Volume.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:getDefaults\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:getStaleAgentActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:importContentFile\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:importFiles\\(\\) has parameter \\$files with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:importFiles\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:knownInventoryExtensions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Conf\\:\\:saveConf\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Conf\\:\\:\\$currents type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Conf.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:doInventory\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:extractMetadata\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:getErrors\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:getExtraItemtypes\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:getItems\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Inventory\\:\\:getMetadata\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Inventory\\:\\:\\$benchs type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Inventory\\:\\:\\$data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Inventory\\:\\:\\$errors type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\Inventory\\:\\:\\$metadata type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Inventory.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Itemtype\\:\\:defineItemtype\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Itemtype.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\Itemtype\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Itemtype.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:__construct\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:addIPAddresses\\(\\) has parameter \\$ips with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:addNetworkPorts\\(\\) has parameter \\$ports with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:addRefused\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:getNetworkPorts\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:prepareAllRulesInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:prepareEntitiesRulesInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:prepareEntitiesRulesInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:rulepassed\\(\\) has parameter \\$ports_id with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:setAssets\\(\\) has parameter \\$assets with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:\\$assets type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:\\$inventoried type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:\\$networks type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:\\$ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\MainAsset\\:\\:\\$refused type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/MainAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:getAccessPoints\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:getManagementPorts\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:getStackComponentName\\(\\) has parameter \\$components with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:getStackedSwitches\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:handleLinks\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:handleLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:rulepassed\\(\\) has parameter \\$ports_id with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:setManagementPorts\\(\\) has parameter \\$ports with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\NetworkEquipment\\:\\:\\$management_ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Printer\\:\\:__construct\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Printer.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Printer\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Printer.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:getManagementPorts\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:handleLinks\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:handleLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:prepare\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:rulepassed\\(\\) has parameter \\$ports_id with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:setManagementPorts\\(\\) has parameter \\$ports with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:\\$extra_data type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Glpi\\\\Inventory\\\\MainAsset\\\\Unmanaged\\:\\:\\$management_ports type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/MainAsset/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:getInventoryStatus\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleCollectTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleCollectTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleDeployTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleDeployTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleESXTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleESXTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleInventoryTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleInventoryTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleNetDiscoveryTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleNetDiscoveryTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleNetInventoryTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleNetInventoryTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleRemoteInventoryTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleRemoteInventoryTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleWakeOnLanTask\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Inventory\\\\Request\\:\\:handleWakeOnLanTask\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Inventory/Request.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\ItemTranslation\\\\ItemTranslation\\:\\:getSystemSQLCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -18300,6 +20880,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Marketplace/Controller.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Marketplace\\\\View\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Marketplace/View.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Marketplace\\\\View\\:\\:displayList\\(\\) has parameter \\$plugins with no value type specified in iterable type array\\.$#',
@@ -19124,6 +21710,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Session/SessionInfo.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Socket\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Socket.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Socket\\:\\:dropdownWiringSide\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19160,6 +21752,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Socket.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Socket\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Socket.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Socket\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Socket.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Socket\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19167,6 +21771,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\Socket\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/Socket.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\Socket\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Glpi/Socket.php',
@@ -19442,6 +22052,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/System/Log/LogParser.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Glpi\\\\System\\\\Log\\\\LogViewer\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Glpi/System/Log/LogViewer.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Glpi\\\\System\\\\RequirementsList\\:\\:getErrorMessages\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19574,54 +22190,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Glpi/Toolbox/MarkdownBuilder.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:dbEscapeRecursive\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:dbEscapeRecursive\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:dbUnescapeRecursive\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:dbUnescapeRecursive\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:decodeHtmlSpecialCharsRecursive\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:decodeHtmlSpecialCharsRecursive\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:encodeHtmlSpecialCharsRecursive\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Glpi\\\\Toolbox\\\\Sanitizer\\:\\:encodeHtmlSpecialCharsRecursive\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Glpi/Toolbox/Sanitizer.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Property Glpi\\\\Toolbox\\\\UuidStore\\:\\:\\$_instances type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19706,6 +22274,24 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Group.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Group\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Group.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Group\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Group.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Group\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Group.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Group\\:\\:getCloneRelations\\(\\) return type has no value type specified in iterable type array\\<mixed\\>\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19761,6 +22347,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Group\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Group.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Group\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Group.php',
@@ -19880,6 +22472,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Group_User.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Group_User\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Group_User.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Group_User\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19964,6 +22562,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Holiday.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Holiday\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Holiday.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Html\\:\\:activateUserTemplateAutocompletion\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -19971,12 +22575,6 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Html\\:\\:compileScss\\(\\) has parameter \\$args with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:createProgressBar\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Html.php',
@@ -19994,37 +22592,7 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Html.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:displayProgressBar\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Method Html\\:\\:displayTitle\\(\\) has parameter \\$ref_btts with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:entities_deep\\(\\) has parameter \\$value with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:entities_deep\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:entity_decode_deep\\(\\) has parameter \\$value with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:entity_decode_deep\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Html.php',
@@ -20181,12 +22749,6 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Html\\:\\:progress\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Html.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Html\\:\\:progressBar\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Html.php',
@@ -20426,6 +22988,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/IPNetwork.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method IPNetwork\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/IPNetwork.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method IPNetwork\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -20463,6 +23031,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method IPNetwork\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/IPNetwork.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method IPNetwork\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/IPNetwork.php',
@@ -20570,7 +23144,25 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ITILCategory.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ITILCategory\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILCategory.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ITILFollowup\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILFollowup.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ITILFollowup\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILFollowup.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ITILFollowup\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ITILFollowup.php',
@@ -20589,6 +23181,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ITILFollowup\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILFollowup.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ITILFollowup\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ITILFollowup.php',
@@ -20672,6 +23270,24 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ITILFollowupTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ITILFollowupTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILFollowupTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ITILSolution\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILSolution.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ITILSolution\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILSolution.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ITILSolution\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -20684,10 +23300,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ITILSolution.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ITILSolution\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILSolution.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ITILSolution\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ITILSolution.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ITILTemplate\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILTemplate.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ITILTemplate\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
@@ -20948,6 +23576,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ITILValidationTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ITILValidationTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ITILValidationTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ITILValidationTemplate_Target\\:\\:getTargets\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21194,6 +23828,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Infocom.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Infocom\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Infocom.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Infocom\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Infocom.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Infocom\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21236,6 +23882,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Infocom.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Infocom\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Infocom.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Infocom\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21254,6 +23906,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/InterfaceType.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ItemAntivirus\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemAntivirus.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ItemAntivirus\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemAntivirus.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ItemAntivirus\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21264,6 +23928,36 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ItemAntivirus.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ItemVirtualMachine\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemVirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ItemVirtualMachine\\:\\:findVirtualMachine\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemVirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ItemVirtualMachine\\:\\:getUUIDRestrictCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemVirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ItemVirtualMachine\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemVirtualMachine.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ItemVirtualMachine\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ItemVirtualMachine.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ItemVirtualMachine\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
@@ -21560,6 +24254,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_DeviceSimcard.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Property Item_DeviceSimcard\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_DeviceSimcard.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_DeviceSoundCard\\:\\:getImportCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21579,6 +24279,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Item_Devices\\:\\:addDevicesFromPOST\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_Devices\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Item_Devices.php',
@@ -21626,6 +24332,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_Devices.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_Devices\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_Devices\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_Devices\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21668,6 +24386,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_Devices.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_Devices\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_Devices\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21680,10 +24404,28 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_Devices.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_Devices\\:\\:unsetUndisclosedFields\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_Devices\\:\\:updateAll\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property Item_Devices\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Devices.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_Disk\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Disk.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Item_Disk\\:\\:getAllEncryptionStatus\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -21704,6 +24446,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_Disk.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_Disk\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Disk.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_Disk\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Disk.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_Disk\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21711,6 +24465,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Item_Disk\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Disk.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_Disk\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Item_Disk.php',
@@ -21806,6 +24566,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_Line.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_Ola\\:\\:prepareInputForAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_Ola.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_OperatingSystem\\:\\:getRelationMassiveActionsSpecificities\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21813,6 +24579,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Item_OperatingSystem\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_OperatingSystem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_OperatingSystem\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Item_OperatingSystem.php',
@@ -21914,6 +24686,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_RemoteManagement.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_RemoteManagement\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_RemoteManagement.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_RemoteManagement\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21932,7 +24710,25 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_SoftwareLicense.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_SoftwareLicense\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_SoftwareLicense.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_SoftwareLicense\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_SoftwareLicense.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_SoftwareLicense\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_SoftwareLicense.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Item_SoftwareLicense\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Item_SoftwareLicense.php',
@@ -21974,6 +24770,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Item_SoftwareVersion.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Item_SoftwareVersion\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Item_SoftwareVersion.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Item_SoftwareVersion\\:\\:softwareByCategory\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -21990,6 +24792,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Itil_Project.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Knowbase\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Knowbase.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method KnowbaseItem\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -22011,6 +24819,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method KnowbaseItem\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/KnowbaseItem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method KnowbaseItem\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/KnowbaseItem.php',
@@ -22160,6 +24974,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/KnowbaseItem.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method KnowbaseItem\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/KnowbaseItem.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method KnowbaseItem\\:\\:searchForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22194,6 +25014,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/KnowbaseItem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method KnowbaseItemTranslation\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/KnowbaseItemTranslation.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method KnowbaseItemTranslation\\:\\:getAlreadyTranslatedForItem\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -22250,6 +25076,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/KnowbaseItem_Item.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method KnowbaseItem_Item\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/KnowbaseItem_Item.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method KnowbaseItem_Item\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/KnowbaseItem_Item.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method KnowbaseItem_Item\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22298,13 +25136,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/KnowbaseItem_User.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method LevelAgreement\\:\\:getDataForTicket\\(\\) return type has no value type specified in iterable type iterable\\.$#',
+	'message' => '#^Method LevelAgreement\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/LevelAgreement.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method LevelAgreement\\:\\:getFieldNames\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'message' => '#^Method LevelAgreement\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/LevelAgreement.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method LevelAgreement\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/LevelAgreement.php',
@@ -22329,6 +25173,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method LevelAgreement\\:\\:getTypes\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/LevelAgreement.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method LevelAgreement\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/LevelAgreement.php',
@@ -22382,6 +25232,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/LevelAgreementLevel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method LevelAgreementLevel\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/LevelAgreementLevel.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method LevelAgreementLevel\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/LevelAgreementLevel.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method LevelAgreementLevel\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22394,10 +25256,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/LevelAgreementLevel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method LevelAgreementLevel\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/LevelAgreementLevel.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method LevelAgreementLevel\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/LevelAgreementLevel.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Line\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Line.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Line\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -22478,6 +25352,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Line.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Line\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Line.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Line\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22488,6 +25368,18 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/LineOperator.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method LineOperator\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/LineOperator.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Link\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Link.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Link\\:\\:generateLinkContents\\(\\) has parameter \\$custom_vars with no value type specified in iterable type array\\.$#',
@@ -22521,6 +25413,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Link\\:\\:getLinkedItemtypes\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Link.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Link\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Link.php',
@@ -22574,6 +25472,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Location.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Location\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Location.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Location\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22617,6 +25521,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Location\\:\\:prepareInputForClone\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Location.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Location\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Location.php',
@@ -22688,6 +25598,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Lockedfield.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Lockedfield\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Lockedfield.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Lockedfield\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Lockedfield.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Lockedfield\\:\\:prepareInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22695,6 +25617,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Lockedfield\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Lockedfield.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Lockedfield\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Lockedfield.php',
@@ -22802,6 +25730,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/MailCollector.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method MailCollector\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/MailCollector.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method MailCollector\\:\\:deleteOrImportSeveralEmails\\(\\) has parameter \\$emails_ids with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22815,6 +25749,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method MailCollector\\:\\:extractValuesFromRefHeader\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/MailCollector.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method MailCollector\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/MailCollector.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method MailCollector\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/MailCollector.php',
@@ -22850,6 +25796,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/MailCollector.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method MailCollector\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/MailCollector.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method MailCollector\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22880,6 +25832,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/MailCollector.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Property MailCollector\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/MailCollector.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ManualLink\\:\\:getForItem\\(\\) return type has no value type specified in iterable type iterable\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -22893,6 +25851,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ManualLink\\:\\:getLogTypeID\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ManualLink.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ManualLink\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ManualLink.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ManualLink\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ManualLink.php',
@@ -23234,6 +26204,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Monitor.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Monitor\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Monitor.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Monitor\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23354,6 +26330,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Monitor.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Monitor\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Monitor.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Monitor\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23366,6 +26348,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Monitor.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkAlias\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkAlias.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkAlias\\:\\:getHTMLTableCellsForItem\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23373,6 +26361,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkAlias\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkAlias.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkAlias\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkAlias.php',
@@ -23403,6 +26397,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkEquipment\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkEquipment\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkEquipment\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkEquipment.php',
@@ -23522,6 +26528,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NetworkEquipment.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkEquipment\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkEquipmentModel\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkEquipmentModel.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkEquipmentModelStencil\\:\\:getParams\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23558,6 +26576,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NetworkEquipmentModelStencil.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkName\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkName.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkName\\:\\:getHTMLTableCellsForItem\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23571,6 +26595,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkName\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkName.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkName\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkName.php',
@@ -23592,6 +26622,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkName.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPort\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPort.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkPort\\:\\:getConnexityMassiveActionsSpecificities\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -23625,6 +26661,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkPort\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPort.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPort\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkPort.php',
@@ -23780,6 +26822,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NetworkPortEthernet.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkPortEthernet\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortEthernet.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPortEthernet\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortEthernet.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkPortEthernet\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23799,6 +26853,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkPortEthernet\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortEthernet.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPortEthernet\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkPortEthernet.php',
@@ -23840,6 +26900,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NetworkPortFiberchannel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkPortFiberchannel\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortFiberchannel.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPortFiberchannel\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortFiberchannel.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkPortFiberchannel\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -23859,6 +26931,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkPortFiberchannel\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortFiberchannel.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPortFiberchannel\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkPortFiberchannel.php',
@@ -23996,6 +27074,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NetworkPortType.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkPortType\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortType.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkPortWifi\\:\\:getNetworkCardInterestingFields\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24014,6 +27098,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NetworkPortWifi.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NetworkPortWifi\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortWifi.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPortWifi\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortWifi.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NetworkPortWifi\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24021,6 +27117,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NetworkPortWifi\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NetworkPortWifi.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NetworkPortWifi\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NetworkPortWifi.php',
@@ -24086,6 +27188,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NotImportedEmail.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NotImportedEmail\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotImportedEmail.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NotImportedEmail\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotImportedEmail.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NotImportedEmail\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24099,6 +27213,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NotImportedEmail\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotImportedEmail.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NotImportedEmail\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NotImportedEmail.php',
@@ -24122,7 +27242,31 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Notepad.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Notification\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Notification\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Notification\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Notification\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Notification\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Notification.php',
@@ -24141,6 +27285,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Notification\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Notification\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Notification.php',
@@ -24312,6 +27462,24 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NotificationMailing.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NotificationMailingSetting\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationMailingSetting.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NotificationMailingSetting\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationMailingSetting.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NotificationSetting\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationSetting.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NotificationSettingConfig\\:\\:update\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
@@ -24722,6 +27890,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NotificationTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NotificationTemplate\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NotificationTemplate\\:\\:getCloneRelations\\(\\) return type has no value type specified in iterable type array\\<mixed\\>\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24782,6 +27956,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NotificationTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NotificationTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NotificationTemplate\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24800,6 +27980,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/NotificationTemplateTranslation.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method NotificationTemplateTranslation\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationTemplateTranslation.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method NotificationTemplateTranslation\\:\\:getAllUsedLanguages\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24807,6 +27993,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method NotificationTemplateTranslation\\:\\:getForbiddenStandardMassiveAction\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/NotificationTemplateTranslation.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method NotificationTemplateTranslation\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/NotificationTemplateTranslation.php',
@@ -24848,6 +28040,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Notification_NotificationTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Notification_NotificationTemplate\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification_NotificationTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Notification_NotificationTemplate\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Notification_NotificationTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Notification_NotificationTemplate\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24866,7 +28070,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Notification_NotificationTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method OAuthClient\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/OAuthClient.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method OAuthClient\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/OAuthClient.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property OAuthClient\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/OAuthClient.php',
@@ -24890,6 +28106,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ObjectLock.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ObjectLock\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ObjectLock.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ObjectLock\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ObjectLock.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ObjectLock\\:\\:manageObjectLock\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24908,13 +28136,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ObjectLock.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method OlaLevel_Ticket\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'message' => '#^Method OlaLevelAction\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
-	'path' => __DIR__ . '/src/OlaLevel_Ticket.php',
+	'path' => __DIR__ . '/src/OlaLevelAction.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method OlaLevel_Ticket\\:\\:doLevelForTicket\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#',
+	'message' => '#^Method OlaLevelCriteria\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/OlaLevelCriteria.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method OlaLevel_Ticket\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/OlaLevel_Ticket.php',
@@ -24956,6 +28190,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PCIVendor.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PCIVendor\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PCIVendor.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PDU\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -24975,6 +28215,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method PDU\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PDU.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PDU\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/PDU.php',
@@ -25082,6 +28328,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PDU.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PDU\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PDU.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PDU_Rack\\:\\:getFilled\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25155,6 +28407,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method PassiveDCEquipment\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PassiveDCEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PassiveDCEquipment\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/PassiveDCEquipment.php',
@@ -25274,6 +28532,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PassiveDCEquipment.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PassiveDCEquipment\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PassiveDCEquipment.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PasswordHistory\\:\\:getForUser\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25322,6 +28586,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PendingReason.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PendingReason\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PendingReason.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PendingReason\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PendingReason.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PendingReason\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25341,6 +28617,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method PendingReason\\:\\:prepareInput\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PendingReason.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PendingReason\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/PendingReason.php',
@@ -25389,6 +28671,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Peripheral\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Peripheral.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Peripheral\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Peripheral.php',
@@ -25514,6 +28802,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Peripheral.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Peripheral\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Peripheral.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Peripheral\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25539,6 +28833,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Phone\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Phone.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Phone\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Phone.php',
@@ -25664,6 +28964,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Phone.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Phone\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Phone.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Phone\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25742,6 +29048,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Planning.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Planning\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Planning.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Planning\\:\\:deleteEvent\\(\\) has parameter \\$event with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25772,7 +29084,25 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Planning.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Planning\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Planning.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Planning\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Planning.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Planning\\:\\:getExternalCalendarRawEvents\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Planning.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Planning\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Planning.php',
@@ -25874,6 +29204,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PlanningEventCategory.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEvent\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PlanningExternalEvent\\:\\:displayPlanningItem\\(\\) has parameter \\$val with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -25946,6 +29282,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEvent\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEvent\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PlanningExternalEvent\\:\\:getVisibilityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26000,6 +29348,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEvent\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PlanningExternalEvent\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26007,6 +29361,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method PlanningExternalEvent\\:\\:showRepetitionForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEvent\\:\\:trait_rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/PlanningExternalEvent.php',
@@ -26061,6 +29421,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method PlanningExternalEventTemplate\\:\\:getRsetFromRRuleField\\(\\) return type has no value type specified in iterable type RRule\\\\RSet\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEventTemplate\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEventTemplate\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
@@ -26156,7 +29528,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEventTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method PlanningExternalEventTemplate\\:\\:showRepetitionForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method PlanningExternalEventTemplate\\:\\:trait_rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/PlanningExternalEventTemplate.php',
@@ -26228,6 +29612,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Plugin.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Plugin\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Plugin\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Plugin\\:\\:getAvailableLanguages\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26288,6 +29684,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Plugin.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Plugin\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Plugin\\:\\:getNewInfoAndDirBasedOnOldName\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26319,6 +29721,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Plugin\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Plugin\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Plugin\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Plugin.php',
@@ -26360,6 +29774,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Plugin.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Plugin\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Plugin\\:\\:registerClass\\(\\) has parameter \\$attrib with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26376,6 +29796,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Plugin.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Preference\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Preference.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Preference\\:\\:showTabsContent\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
@@ -26403,6 +29829,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Printer\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Printer.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Printer\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Printer.php',
@@ -26528,6 +29960,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Printer.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Printer\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Printer.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Printer\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26570,6 +30008,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Printer_CartridgeInfo.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Printer_CartridgeInfo\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Printer_CartridgeInfo.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Printer_CartridgeInfo\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Printer_CartridgeInfo.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Printer_CartridgeInfo\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26586,6 +30036,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Printer_CartridgeInfo.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Problem\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Problem.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Problem\\:\\:getAllStatusArray\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -26643,6 +30099,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Problem\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Problem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Problem\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Problem.php',
@@ -26786,6 +30248,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Profile.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Profile\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Profile.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Profile\\:\\:displayLifeCycleMatrix\\(\\) has parameter \\$statuses with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26876,6 +30344,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Profile.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Profile\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Profile.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Profile\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Profile.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Profile\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -26919,6 +30399,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Profile\\:\\:prepareInputForClone\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Profile.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Profile\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Profile.php',
@@ -26973,6 +30459,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ProfileRight\\:\\:getProfileRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProfileRight.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ProfileRight\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProfileRight.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ProfileRight\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ProfileRight.php',
@@ -27068,6 +30566,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Profile_User.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Profile_User\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Profile_User.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Project\\:\\:addTeamMember\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27110,6 +30614,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Project.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Project\\:\\:deleteTeamMember\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27135,6 +30645,24 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Project\\:\\:getActiveProjectIDsForUser\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:getAdditionalMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Project.php',
@@ -27195,6 +30723,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Project\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Project.php',
@@ -27266,6 +30806,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Project.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Project\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Project.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Project\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27284,6 +30830,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ProjectCost.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ProjectCost\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectCost.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ProjectCost\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27291,6 +30843,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ProjectState\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectState.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ProjectState\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ProjectState.php',
@@ -27309,6 +30867,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ProjectTask\\:\\:autoSetDate\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ProjectTask\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ProjectTask.php',
@@ -27440,6 +31004,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ProjectTask.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ProjectTask\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectTask.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ProjectTask\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectTask.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ProjectTask\\:\\:getTeamItemtypes\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27500,6 +31076,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ProjectTask.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ProjectTask\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectTask.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ProjectTask\\:\\:recalculateStatus\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27536,6 +31118,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ProjectTaskTeamDropdown.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ProjectTaskTemplate\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectTaskTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ProjectTaskTemplate\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27549,6 +31137,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method ProjectTaskTemplate\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ProjectTaskTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ProjectTaskTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ProjectTaskTemplate.php',
@@ -27602,18 +31196,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/PurgeSoftwareTask.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method QuerySubQuery\\:\\:__construct\\(\\) has parameter \\$expression with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/QuerySubQuery.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method QueryUnion\\:\\:__construct\\(\\) has parameter \\$expression with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/QueryUnion.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Method QueuedNotification\\:\\:getForbiddenSingleMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27644,6 +31226,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/QueuedNotification.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method QueuedNotification\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedNotification.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method QueuedNotification\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedNotification.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method QueuedNotification\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27662,7 +31256,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/QueuedNotification.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method QueuedNotification\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedNotification.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method QueuedNotification\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedNotification.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method QueuedNotification\\:\\:unsetUndisclosedFields\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/QueuedNotification.php',
@@ -27692,7 +31298,25 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/QueuedWebhook.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method QueuedWebhook\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedWebhook.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method QueuedWebhook\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedWebhook.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method QueuedWebhook\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/QueuedWebhook.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method QueuedWebhook\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/QueuedWebhook.php',
@@ -27704,6 +31328,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/QueuedWebhook.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RSSFeed\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RSSFeed.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method RSSFeed\\:\\:getListCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27711,6 +31341,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RSSFeed\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RSSFeed.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RSSFeed\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RSSFeed.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RSSFeed\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RSSFeed.php',
@@ -27734,6 +31376,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RSSFeed.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RSSFeed\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RSSFeed.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method RSSFeed\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27750,6 +31398,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RSSFeed_User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rack\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rack.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Rack\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -27842,6 +31496,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Rack.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Rack\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rack.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Rack\\:\\:rawSearchOptionsToAdd\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -27861,6 +31521,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RefusedEquipment\\:\\:getMostRecentAgent\\(\\) has parameter \\$conditions with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RefusedEquipment.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RefusedEquipment\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RefusedEquipment.php',
@@ -27897,6 +31563,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Reminder\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Reminder.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Reminder\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Reminder.php',
@@ -27981,6 +31653,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Reminder\\:\\:getRsetFromRRuleField\\(\\) return type has no value type specified in iterable type RRule\\\\RSet\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Reminder.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Reminder\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Reminder.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Reminder\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Reminder.php',
@@ -28071,6 +31755,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Reminder\\:\\:prepareInputForUpdate\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Reminder.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Reminder\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Reminder.php',
@@ -28214,6 +31904,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RequestType.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RequestType\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RequestType.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Reservation\\:\\:computePeriodicities\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -28286,13 +31982,37 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ReservationItem.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ReservationItem\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ReservationItem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ReservationItem\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ReservationItem.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ReservationItem\\:\\:getAvailableItemsCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ReservationItem.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ReservationItem\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ReservationItem.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ReservationItem\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ReservationItem.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method ReservationItem\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ReservationItem.php',
@@ -28364,6 +32084,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Rule.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Rule\\:\\:displayAdditionalRuleAction\\(\\) has parameter \\$action with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -28371,6 +32097,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Rule\\:\\:displayAdditionalRuleCondition\\(\\) has parameter \\$criteria with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:doHookAndMergeResults\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:doHookAndMergeResults\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Rule.php',
@@ -28472,6 +32210,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Rule.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:getAllActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Rule\\:\\:getAllCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -28509,6 +32253,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Rule\\:\\:getForbiddenSingleMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Rule.php',
@@ -28569,6 +32319,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Rule\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Rule.php',
@@ -28683,6 +32445,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Rule\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Rule.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Rule\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Rule.php',
@@ -28814,6 +32582,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RuleAction.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RuleAction\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleAction.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleAction\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleAction.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method RuleAction\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -28821,6 +32601,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RuleAction\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleAction.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleAction\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RuleAction.php',
@@ -28893,6 +32679,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RuleCollection\\:\\:countTotalItemsForRulesReplay\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleCollection.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleCollection\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RuleCollection.php',
@@ -29210,6 +33002,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RuleCriteria.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RuleCriteria\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleCriteria.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleCriteria\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleCriteria.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method RuleCriteria\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -29229,6 +33033,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RuleCriteria\\:\\:match\\(\\) has parameter \\$regex_result with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleCriteria.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleCriteria\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RuleCriteria.php',
@@ -29295,6 +33105,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RuleDefineItemtype\\:\\:getNetportCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleDefineItemtype.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleDefineItemtype\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleDefineItemtype.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleDefineItemtype\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RuleDefineItemtype.php',
@@ -29636,6 +33458,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RuleImportAsset.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RuleImportAsset\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleImportAsset.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleImportAsset\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleImportAsset.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method RuleImportAsset\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -29709,6 +33543,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method RuleImportAssetCollection\\:\\:collectionFilter\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleImportAssetCollection.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method RuleImportAssetCollection\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/RuleImportAssetCollection.php',
@@ -29966,6 +33806,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RuleRightParameter.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method RuleRightParameter\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/RuleRightParameter.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method RuleSoftwareCategoryCollection\\:\\:prepareInputDataForProcess\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30026,6 +33872,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/RuleTicketCollection.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SLM\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SLM.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SLM\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SLM.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SLM\\:\\:getRights\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30044,6 +33902,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SLM.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SLM\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SLM.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SLM\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30056,6 +33920,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SNMPCredential.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SNMPCredential\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SNMPCredential.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SNMPCredential\\:\\:prepareInputs\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30063,6 +33933,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method SNMPCredential\\:\\:prepareInputs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SNMPCredential.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SNMPCredential\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SNMPCredential.php',
@@ -30110,6 +33986,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SavedSearch.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SavedSearch\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SavedSearch\\:\\:dropdownDoCount\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30147,6 +34029,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method SavedSearch\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SavedSearch\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SavedSearch\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SavedSearch.php',
@@ -30236,6 +34130,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SavedSearch.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SavedSearch\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SavedSearch\\:\\:saveOrder\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30272,6 +34172,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SavedSearch_Alert.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SavedSearch_Alert\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch_Alert.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SavedSearch_Alert\\:\\:getItemsForLog\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30303,6 +34209,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method SavedSearch_User\\:\\:getDefault\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch_User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SavedSearch_User\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SavedSearch_User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SavedSearch_User\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SavedSearch_User.php',
@@ -30662,6 +34580,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SlaLevel.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SlaLevelAction\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SlaLevelAction.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SlaLevelCriteria\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SlaLevelCriteria.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SlaLevel_Ticket\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30699,6 +34629,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Software\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Software.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Software\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Software.php',
@@ -30854,6 +34790,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Software.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Software\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Software.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Software\\:\\:showBrowseView\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -30891,6 +34833,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method SoftwareLicense\\:\\:cronInfo\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SoftwareLicense.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SoftwareLicense\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SoftwareLicense.php',
@@ -31028,10 +34976,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SoftwareLicense.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SoftwareLicense\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SoftwareLicense.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SoftwareLicense\\:\\:showForm\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SoftwareLicense.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SoftwareVersion\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SoftwareVersion.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method SoftwareVersion\\:\\:dropdownForOneSoftware\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
@@ -31041,6 +35001,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method SoftwareVersion\\:\\:getStateVisibilityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SoftwareVersion.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SoftwareVersion\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SoftwareVersion.php',
@@ -31112,7 +35078,19 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/SolutionTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method SolutionTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SolutionTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method SolutionType\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/SolutionType.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method SolutionType\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/SolutionType.php',
@@ -31298,6 +35276,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/State.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method State\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/State.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Stencil\\:\\:addNewZones\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31364,6 +35348,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Supplier.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Supplier\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Supplier.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Supplier\\:\\:dropdown\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31413,6 +35403,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Supplier\\:\\:prepareInputForClone\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Supplier.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Supplier\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Supplier.php',
@@ -31478,6 +35474,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/TaskCategory.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method TaskCategory\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/TaskCategory.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method TaskTemplate\\:\\:cleanCloneInput\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31526,6 +35528,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/TaskTemplate.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method TaskTemplate\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/TaskTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method TaskTemplate\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/TaskTemplate.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method TaskTemplate\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31569,6 +35583,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method TaskTemplate\\:\\:prepareInputForClone\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/TaskTemplate.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method TaskTemplate\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/TaskTemplate.php',
@@ -31634,6 +35654,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Ticket.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Ticket\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Ticket.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Ticket\\:\\:dropdownType\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31647,6 +35673,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Ticket\\:\\:getActiveOrSolvedLastDaysTicketsForItem\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Ticket.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Ticket\\:\\:getAdditionalMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Ticket.php',
@@ -31671,12 +35703,6 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Ticket\\:\\:getCriteriaFromProfile\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Ticket.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Ticket\\:\\:getDatasToAddOLA\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Ticket.php',
@@ -31754,6 +35780,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Ticket.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Ticket\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Ticket.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Ticket\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Ticket.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Ticket\\:\\:getSpecificValueToSelect\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31814,18 +35852,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Ticket.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method Ticket\\:\\:olaAffect\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Ticket.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Ticket\\:\\:olaAffect\\(\\) has parameter \\$manual_olas_id with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Ticket.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Method Ticket\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -31833,6 +35859,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Ticket\\:\\:processRules\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Ticket.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Ticket\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Ticket.php',
@@ -31884,6 +35916,12 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Ticket.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method TicketRecurrent\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/TicketRecurrent.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method TicketRecurrent\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -32010,12 +36048,6 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/TicketValidation.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Ticket_Ticket\\:\\:getLinkedTicketsTo\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Ticket_Ticket.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Ticket_Ticket\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
@@ -32192,18 +36224,6 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Toolbox.php',
 ];
 $ignoreErrors[] = [
-	'message' => '#^Method Toolbox\\:\\:stripslashes_deep\\(\\) has parameter \\$value with no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Toolbox.php',
-];
-$ignoreErrors[] = [
-	'message' => '#^Method Toolbox\\:\\:stripslashes_deep\\(\\) return type has no value type specified in iterable type array\\.$#',
-	'identifier' => 'missingType.iterableValue',
-	'count' => 1,
-	'path' => __DIR__ . '/src/Toolbox.php',
-];
-$ignoreErrors[] = [
 	'message' => '#^Method Transfer\\:\\:getDestinationEntityAncestors\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -32229,6 +36249,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Transfer\\:\\:moveItems\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Transfer.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Transfer\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Transfer.php',
@@ -32274,6 +36300,18 @@ $ignoreErrors[] = [
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/USBVendor.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method USBVendor\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/USBVendor.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Unmanaged\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Unmanaged.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Unmanaged\\:\\:getAssignableVisiblityCriteria\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -32367,6 +36405,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Unmanaged\\:\\:processMassiveActionsForOneItemtype\\(\\) has parameter \\$ids with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Unmanaged.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Unmanaged\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Unmanaged.php',
@@ -32582,7 +36626,25 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/User.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method User\\:\\:dropdown\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:getAdditionalMenuLinks\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:getAdditionalMenuOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/User.php',
@@ -32649,6 +36711,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method User\\:\\:getSpecificMassiveActions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/User.php',
@@ -32744,6 +36818,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/User.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method User\\:\\:showBrowseView\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -32774,6 +36854,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/User.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method User\\:\\:unsetUndisclosedFields\\(\\) has parameter \\$fields with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method User\\:\\:updateForgottenPassword\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -32787,6 +36873,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Property User\\:\\:\\$entities type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/User.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Property User\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/User.php',
@@ -32810,10 +36902,22 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/ValidationStep.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method ValidationStep\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/ValidationStep.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method ValidatorSubstitute\\:\\:updateSubstitutes\\(\\) has parameter \\$input with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/ValidatorSubstitute.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Vlan\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Vlan.php',
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Vlan\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
@@ -32829,6 +36933,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Vlan\\:\\:getHTMLTableHeader\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Vlan.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Vlan\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Vlan.php',
@@ -32859,6 +36969,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Webhook\\:\\:cloneMultiple\\(\\) has parameter \\$override_input with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Webhook.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Webhook\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Webhook.php',
@@ -32912,6 +37028,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Webhook.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Webhook\\:\\:getMenuContent\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Webhook.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Webhook\\:\\:getMonacoSuggestions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -32925,6 +37047,18 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method Webhook\\:\\:getSentQueriesSearchParams\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Webhook.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Webhook\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Webhook.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method Webhook\\:\\:getSpecificValueToDisplay\\(\\) has parameter \\$values with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/Webhook.php',
@@ -32990,6 +37124,12 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Webhook.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Method Webhook\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Webhook.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method Webhook\\:\\:saveFilter\\(\\) has parameter \\$search_criteria with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -33014,6 +37154,18 @@ $ignoreErrors[] = [
 	'path' => __DIR__ . '/src/Webhook.php',
 ];
 $ignoreErrors[] = [
+	'message' => '#^Property Webhook\\:\\:\\$undisclosedFields type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/Webhook.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method WifiNetwork\\:\\:defineTabs\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/WifiNetwork.php',
+];
+$ignoreErrors[] = [
 	'message' => '#^Method WifiNetwork\\:\\:displaySpecificTypeField\\(\\) has parameter \\$field with no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
@@ -33027,6 +37179,12 @@ $ignoreErrors[] = [
 ];
 $ignoreErrors[] = [
 	'message' => '#^Method WifiNetwork\\:\\:getAdditionalFields\\(\\) return type has no value type specified in iterable type array\\.$#',
+	'identifier' => 'missingType.iterableValue',
+	'count' => 1,
+	'path' => __DIR__ . '/src/WifiNetwork.php',
+];
+$ignoreErrors[] = [
+	'message' => '#^Method WifiNetwork\\:\\:rawSearchOptions\\(\\) return type has no value type specified in iterable type array\\.$#',
 	'identifier' => 'missingType.iterableValue',
 	'count' => 1,
 	'path' => __DIR__ . '/src/WifiNetwork.php',
