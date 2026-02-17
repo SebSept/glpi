@@ -1013,11 +1013,11 @@ TWIG, ['message' => __('An action related to an approval exists, but there is no
             $actions['groups_id_validate_any']['permitseveral']             = ['add_validation'];
 
             // Approval request to requester group manager
-            $actions['users_id_validate_requester_supervisor']['name']  = __('Approval request to requester group manager');
+            $actions['users_id_validate_requester_supervisor']['name']  = __('Send an approval request to requester group manager');
             $actions['users_id_validate_requester_supervisor']['type']  = 'yesno';
             $actions['users_id_validate_requester_supervisor']['force_actions'] = ['add_validation'];
 
-            $actions['users_id_validate_assign_supervisor']['name']     = __('Approval request to technician group manager');
+            $actions['users_id_validate_assign_supervisor']['name']     = __('Send an approval request to technician group manager');
             $actions['users_id_validate_assign_supervisor']['type']     = 'yesno';
             $actions['users_id_validate_assign_supervisor']['force_actions'] = ['add_validation'];
 
