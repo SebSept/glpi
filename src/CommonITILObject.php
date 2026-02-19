@@ -9262,7 +9262,7 @@ abstract class CommonITILObject extends CommonDBTM implements KanbanInterface, T
                 }
             }
 
-            // dedeplicate validations to send
+            // deduplicate validations to send
             $validations_to_send = array_unique($validations_to_send, SORT_REGULAR);
 
             // create validation requests
