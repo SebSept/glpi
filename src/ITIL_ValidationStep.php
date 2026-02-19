@@ -151,8 +151,7 @@ abstract class ITIL_ValidationStep extends CommonDBChild
             return CommonITILValidation::ACCEPTED;
         }
         // required validation threshold can be reached
-        $sum = round($achievements[CommonITILValidation::ACCEPTED] + $achievements[CommonITILValidation::WAITING]);
-        if ($sum >= $required_percent) {
+       if (($achievements[CommonITILValidation::ACCEPTED] + $achievements[CommonITILValidation::WAITING]) >= $required_percent) {
             return CommonITILValidation::WAITING;
         }
 
@@ -162,10 +161,10 @@ abstract class ITIL_ValidationStep extends CommonDBChild
     /**
      * Validation step achievements by status.
      *
-     * In case of non integer percentages, values will be rounded down (floor) and one of the status will get a have a higher percentage to reach 100%.
+     * In case of noninteger percentages, values will be rounded down (floor) and one of the status will get a higher percentage to reach 100%.
      * The affected status is the one with a non-zero value, the highest decimal part and comming first in the list of statuses (accepted at the moment).
      *
-     * @return array{2: float, 3: float, 4: float} array keys are the status constants
+     * @return array{CommonITILValidation::WAITING: float, CommonITILValidation::ACCEPTED: float, CommonITILValidation::REFUSED: float} array keys are the status constants
      */
     public function getAchievements(): array
     {
@@ -186,10 +185,21 @@ abstract class ITIL_ValidationStep extends CommonDBChild
         $count_by_status = fn($status) => count(array_filter($validations, fn($v) => $v["status"] === $status));
 
         $result = [
-            CommonITILValidation::ACCEPTED => $count_by_status(CommonITILValidation::ACCEPTED) / $validations_count * 100,
-            CommonITILValidation::REFUSED => $count_by_status(CommonITILValidation::REFUSED) / $validations_count * 100,
-            CommonITILValidation::WAITING => $count_by_status(CommonITILValidation::WAITING) / $validations_count * 100,
+            CommonITILValidation::ACCEPTED => floor($count_by_status(CommonITILValidation::ACCEPTED) / $validations_count * 100),
+            CommonITILValidation::REFUSED => floor($count_by_status(CommonITILValidation::REFUSED) / $validations_count * 100),
+            CommonITILValidation::WAITING => floor($count_by_status(CommonITILValidation::WAITING) / $validations_count * 100),
         ];
+
+        // one of the status needs to be incremented by 1
+        if(array_sum($result) !== 100.0) {
+            // try on states by order : ACCEPTED, WAITING, REFUSED
+            foreach ([CommonITILValidation::ACCEPTED, CommonITILValidation::WAITING, CommonITILValidation::REFUSED] as $status) {
+                if ($result[$status] > 0.0) {
+                    $result[$status]++;
+                    break;
+                }
+            }
+        }
 
         return $result;
     }
