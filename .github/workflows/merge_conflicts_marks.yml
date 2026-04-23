@@ -12,6 +12,7 @@ on:
       - 'bugfixes/*'
     tags:
       - '*'
+  pull_request:
 
 jobs:
   check-conflicts:
