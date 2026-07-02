@@ -1180,7 +1180,7 @@ class Auth extends CommonGLPI
 
         // initiate ReAuthentication, consider authentication successful as user just logged in.
         if ($this->auth_succeded) {
-            (new ReAuthManager())->authenticate();
+            (ReAuthManager::getInstance())->authenticate();
         }
 
         return $this->auth_succeded;

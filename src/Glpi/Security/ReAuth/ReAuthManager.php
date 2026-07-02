@@ -37,6 +37,7 @@ declare(strict_types=1);
 namespace Glpi\Security\ReAuth;
 
 use Glpi\Exception\RedirectException;
+use Glpi\Toolbox\SingletonTrait;
 use InvalidArgumentException;
 use RuntimeException;
 use Safe\DateTime;
@@ -45,6 +46,7 @@ use function Safe\parse_url;
 
 final class ReAuthManager
 {
+    use SingletonTrait;
     public const int REAUTH_DELAY_SECONDS = 15 * MINUTE_TIMESTAMP;
 
     private ?ReAuthStrategyInterface $strategy = null;
