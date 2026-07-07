@@ -42,6 +42,20 @@ use Glpi\Security\ReAuth\ReAuthManager;
  */
 trait ReAuthTrait
 {
+    private function getReAuthManager(): ReAuthManager
+    {
+        return ReAuthManager::getInstance();
+    }
+
+    /**
+     * Wipe the SingletonTrait instance cache so the next getInstance() returns a fresh manager.
+     */
+    private function resetReAuthManager(): void
+    {
+        $instances = new \ReflectionProperty(ReAuthManager::class, '_instances');
+        $instances->setValue(null, []);
+    }
+
     /**
      * Simulate a web (non-CLI) request context so that re-authentication
      * redirects can be triggered from a test.
@@ -93,10 +107,5 @@ trait ReAuthTrait
         } else {
             unset($_SESSION['glpi_reauth_until']);
         }
-    }
-
-    private function getReAuthManager(): ReAuthManager
-    {
-        return ReAuthManager::getInstance();
     }
 }
