@@ -39,6 +39,18 @@ var current_page = 1;
 var ajax_url;
 var ajax_done = false;
 
+/**
+ * Plugin management requires a fresh re-authentication (Plugin::itemTypeRequiresReauthentication()).
+ * The backend answers with a 403 once the re-authentication window has expired, as the prompt
+ * cannot be displayed inside an XHR response. Reloading the page runs the regular flow: the page
+ * itself redirects to the prompt, then is replayed once the user has re-authenticated.
+ */
+var handleMarketplaceAjaxFailure = function(jqxhr) {
+    if (jqxhr.status === 403) {
+        window.location.reload();
+    }
+};
+
 $(document).ready(function() {
     ajax_url = `${CFG_GLPI.root_doc}/ajax/marketplace.php`;
 
@@ -78,7 +90,7 @@ $(document).ready(function() {
                     displayAjaxMessageAfterRedirect();
                     addTooltips();
                 }
-            });
+            }).fail(handleMarketplaceAjaxFailure);
         };
 
         if (
@@ -93,7 +105,7 @@ $(document).ready(function() {
                 'key': plugin_key
             }).done(function() {
                 executeAction();
-            });
+            }).fail(handleMarketplaceAjaxFailure);
             return;
         } else {
             executeAction();
@@ -184,8 +196,8 @@ var filterPluginList = function(page, force) {
             'total': nb_plugins,
         }).done(function(html) {
             pagination.html(html);
-        });
-    });
+        }).fail(handleMarketplaceAjaxFailure);
+    }).fail(handleMarketplaceAjaxFailure);
 
     return jqxhr;
 };

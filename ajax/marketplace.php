@@ -40,10 +40,27 @@ if (($_GET["action"] ?? null) === "get_dl_progress") {
     return;
 }
 
-Session::checkRight("config", UPDATE);
-
+use Glpi\Exception\Http\AccessDeniedHttpException;
 use Glpi\Marketplace\Controller as MarketplaceController;
 use Glpi\Marketplace\View as MarketplaceView;
+
+// Right and re-authentication checks: Plugin requires a fresh re-authentication.
+// `canGlobal()` checks the right first, so a user without the `config` UPDATE right is not told
+// anything about the re-authentication state.
+$reauth_needed = null;
+if (!(new Plugin())->canGlobal(UPDATE, $reauth_needed)) {
+    $exception = new AccessDeniedHttpException();
+    if ($reauth_needed) {
+        // Fail explicitly instead of redirecting to the re-authentication prompt: jQuery would
+        // follow the redirection and the marketplace JS would inject the prompt form into the
+        // page. `js/marketplace.js` reloads the page on this error, and loading the page runs
+        // the regular re-authentication flow.
+        $exception->setMessageToDisplay(
+            __('Your re-authentication has expired. Please re-authenticate to manage plugins.')
+        );
+    }
+    throw $exception;
+}
 
 if (isset($_POST['key']) && isset($_POST["action"])) {
     $marketplace_ctrl = new MarketplaceController($_POST['key']);

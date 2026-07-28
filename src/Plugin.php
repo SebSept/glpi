@@ -203,6 +203,15 @@ class Plugin extends CommonDBTM
         return _n('Plugin', 'Plugins', $nb);
     }
 
+    /**
+     * Plugin management (install, enable, uninstall, marketplace downloads) executes third-party
+     * code with the highest privileges: it requires a fresh re-authentication.
+     */
+    #[Override]
+    protected static function itemTypeRequiresReauthentication(): bool
+    {
+        return true;
+    }
 
     public static function getMenuName()
     {

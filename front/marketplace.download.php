@@ -38,7 +38,10 @@ require_once(__DIR__ . '/_check_webserver_config.php');
 use Glpi\Exception\Http\AccessDeniedHttpException;
 use Glpi\Marketplace\Controller as MarketplaceController;
 
-Session::checkRight("config", UPDATE);
+// Right and re-authentication checks: Plugin requires a fresh re-authentication.
+// This endpoint is reached through a regular link, so the redirection to the prompt
+// and the replay of the download request both happen in the browser.
+(new Plugin())->checkGlobal(UPDATE);
 
 if (!MarketplaceController::isWebAllowed()) {
     throw new AccessDeniedHttpException();

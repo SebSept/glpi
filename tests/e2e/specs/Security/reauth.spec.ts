@@ -60,6 +60,15 @@ test.describe('Reauth (sudo mode)', () => {
         await expect(prompt.heading).toBeVisible();
     });
 
+    test('redirects to the reauth prompt on the plugins page', async ({ page }) => {
+        // Plugin management is protected too (Plugin::itemTypeRequiresReauthentication()).
+        await page.goto('/front/plugin.php');
+
+        const prompt = new ReAuthPromptPage(page);
+        await expect(page).toHaveURL(/\/ReAuth\/Prompt/);
+        await expect(prompt.heading).toBeVisible();
+    });
+
     test('grants access when the correct password is provided', async ({ page }) => {
         await page.goto(protected_url);
 

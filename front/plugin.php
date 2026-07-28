@@ -38,11 +38,12 @@ use Glpi\Marketplace\View;
 
 require_once(__DIR__ . '/_check_webserver_config.php');
 
-Session::checkRight("config", UPDATE);
+$plugin = new Plugin();
+// Right and re-authentication checks: Plugin requires a fresh re-authentication.
+$plugin->checkGlobal(UPDATE);
 
 // This has to be called before search process is called, in order to add
 // "new" plugins in DB to be able to display them.
-$plugin = new Plugin();
 $plugin->checkStates(true);
 
 Html::header(__('Setup'), '', "config", "plugin");

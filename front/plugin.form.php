@@ -41,9 +41,10 @@ use Glpi\Exception\Http\BadRequestHttpException;
  * @since 0.84
  */
 
-Session::checkRight("config", UPDATE);
-
 $plugin = new Plugin();
+// Right and re-authentication checks: Plugin requires a fresh re-authentication.
+// On the first pass the POST is stored and replayed once the user has re-authenticated.
+$plugin->checkGlobal(UPDATE);
 
 $id     = isset($_POST['id']) && is_numeric($_POST['id']) ? (int) $_POST['id'] : null;
 $action = $_POST['action'] ?? null;

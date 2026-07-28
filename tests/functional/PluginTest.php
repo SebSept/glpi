@@ -38,15 +38,19 @@ namespace tests\units {
     use DirectoryIterator;
     use Error;
     use Glpi\Tests\DbTestCase;
+    use Glpi\Tests\Glpi\Security\ReAuth\ReAuthTrait;
     use Glpi\Toolbox\VersionParser;
     use org\bovigo\vfs\vfsStream;
     use PHPUnit\Framework\Attributes\DataProvider;
+    use PHPUnit\Framework\Attributes\Group;
     use PHPUnit\Framework\Attributes\RunInSeparateProcess;
     use Plugin;
     use Random\RandomException;
 
     class PluginTest extends DbTestCase
     {
+        use ReAuthTrait;
+
         private $test_plugin_directory = 'test';
         public static bool $plugin_test_check_config = true;
         public static bool $plugin_test_check_prerequisites = true;
@@ -64,6 +68,8 @@ namespace tests\units {
 
         public function tearDown(): void
         {
+            // Restore state mutated by the re-authentication tests.
+            $this->restoreWebContext();
             parent::tearDown();
         }
 
@@ -1054,6 +1060,54 @@ PHP
             } else {
                 $this->assertFalse($plugin->getFromDBByCrit(['directory' => $plugin_directory]));
             }
+        }
+
+        /**
+         * Plugin management pages (plugins list, marketplace) are protected by re-authentication.
+         */
+        #[Group('reauth')]
+        public function testItemTypeRequiresReauthentication(): void
+        {
+            // --- arrange ---
+            $this->login();
+            $this->fakeWebContext(Plugin::getSearchURL());
+            $this->setReauthenticated(false);
+
+            // --- act + assert ---
+            $this->assertTrue(Plugin::isUserReauthenticationNeeded());
+        }
+
+        #[Group('reauth')]
+        public function testItemTypeDoesNotRequireReauthenticationOnceReauthenticated(): void
+        {
+            // --- arrange ---
+            $this->login();
+            $this->fakeWebContext(Plugin::getSearchURL());
+            $this->setReauthenticated(true);
+
+            // --- act + assert ---
+            $this->assertFalse(Plugin::isUserReauthenticationNeeded());
+        }
+
+        /**
+         * `ajax/marketplace.php` relies on this to tell a missing re-authentication (403 + reload)
+         * from a missing right (plain 403).
+         */
+        #[Group('reauth')]
+        public function testCanGlobalReportsReauthenticationAsTheOnlyMissingRequirement(): void
+        {
+            // --- arrange ---
+            $this->login(); // TU_USER holds the `config` UPDATE right
+            $this->fakeWebContext(Plugin::getSearchURL());
+            $this->setReauthenticated(false);
+            $reauth_needed = null;
+
+            // --- act ---
+            $allowed = (new Plugin())->canGlobal(UPDATE, $reauth_needed);
+
+            // --- assert ---
+            $this->assertFalse($allowed);
+            $this->assertTrue($reauth_needed);
         }
 
         /**
